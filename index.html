@@ -2,90 +2,24 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Welcome</title>
-	<!-- <link rel="stylesheet" href="styles.scss"> -->
+	<title>Muhamed Mufaku AlArnaut — Collected Works</title>
 </head>
 
 <body>
-	<style>
-		html,
-		body {
-			margin: 0px;
-			height: 100%;
-			background: linear-gradient(90deg, rgb(15, 10, 103) 0%, rgb(13, 13, 176) 35%, rgb(0, 138, 166) 100%);
-			justify-content: center;
-		}
-
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-			background-color: #f9f9f9;
-			color: #333;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			min-height: 100vh;
-		}
-
-		.container {
-			text-align: center;
-			padding: 20px;
-			max-width: 800px;
-			// background-color: #fff;
-			background-color: rgba(255, 255, 255, 0.85);
-			// border: 1px solid #ddd;
-			border: 3px solid rgba(0, 60, 72, 0.3);
-			border-radius: 10px;
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		}
-
-		h1 {
-			font-size: 24px;
-			color: #444;
-		}
-
-		p {
-			font-size: 18px;
-			line-height: 1.6;
-			margin: 20px 100px;
-		}
-
-		.picture {
-			margin: 20px 0;
-		}
-
-		.picture img {
-			max-width: 100%;
-			height: auto;
-			border-radius: 10px;
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		}
-	</style>
-	<div class="container">
-		<p><br>
-			Welcome to the official page of Dr. Mohamed Mufaku Arnaut, a Kosovar-Syrian historian and academic. Here,
-			you will find the latest updates on his work, publications, and insights.
-		</p>
-		<p><br>
-			Mirë se vini në faqen zyrtare të Dr. Mohamed Mufaku Arnaut, një historian dhe akademik Kosovar-Sirian. Këtu
-			do të gjeni përditësimet më të fundit për punën e tij, botimet dhe mendimet e tij.
-		</p>
-		<p><br>
-			أهلاً بكم في الصفحة الرسمية لـ د. محمد م. الأرناؤوط، مؤرخ وأكاديمي كوسوفي سوري. هنا ستجدون آخر التحديثات حول
-			أعماله، منشوراته، وآرائه.
-		</p>
-		<br>
-		<div class="picture">
-			<!-- Add the picture of Dr. Mohamed Mufaku Arnaut below -->
-			<img src="profile.jpg" alt="Dr. Mohamed Mufaku Arnaut">
-		</div>
-		<br>
-		<p><u>(This website is a work in progress)</u></p>
+	<div class="lang-bar">
+		<div id="navv"></div>
+		<button class="lb on" onclick="sw('en')">English<small>English</small></button>
+		<button class="lb" onclick="sw('ar')">العربية<small>Arabic</small></button>
+		<button class="lb" onclick="sw('sq')">Shqip<small>Albanian</small></button>
 	</div>
+
+	<div id="english"></div>
+	<div id="arabic"></div>
+	<div id="albanian"></div>
+
+	<script type="module" src="./src/index"></script>
 </body>
 
 </html>
