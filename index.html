@@ -10,14 +10,28 @@
 <body>
 	<div class="lang-bar">
 		<div id="navv"></div>
-		<button class="lb on" onclick="sw('en')">English<small>English</small></button>
+		<!-- <button class="lb on" onclick="sw('en')">English<small>English</small></button>
 		<button class="lb" onclick="sw('ar')">العربية<small>Arabic</small></button>
-		<button class="lb" onclick="sw('sq')">Shqip<small>Albanian</small></button>
+		<button class="lb" onclick="sw('sq')">Shqip<small>Albanian</small></button> -->
+		<button class="lb on" onclick="swap('en')">English<small>English</small></button>
+		<button class="lb" onclick="swap('ar')">العربية<small>Arabic</small></button>
+		<button class="lb" onclick="swap('sq')">Shqip<small>Albanian</small></button>
 	</div>
 
-	<div id="english"></div>
-	<div id="arabic"></div>
-	<div id="albanian"></div>
+	<div id="p-en" class="panel on">
+		<div class="site">
+			<header class="hdr">
+				<div class="t1">Muhamed Mufaku AlArnaut</div>
+				<div class="sub">Scholar · Historian · Translator · Cultural Bridge-Builder</div>
+			</header>
+
+			<div id="about"></div>
+
+			<div id="english"></div>
+			<div id="arabic"></div>
+			<div id="albanian"></div>
+		</div>
+	</div>
 
 	<script type="module" src="./src/index"></script>
 </body>

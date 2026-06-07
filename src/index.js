@@ -6,6 +6,7 @@ import sq from "./sq.js"
 import en_json from "./locales/en.json"
 import ar_json from "./locales/ar.json"
 import sq_json from "./locales/sq.json"
+import about from "./pages/about.js"
 
 await i18next.init({
 	lng: 'en',
@@ -39,11 +40,21 @@ const tabs = [
 ).join('')
 
 document.getElementById('navv').innerHTML = /* html */`<div class="tab-grid">${tabs}</div>`
-document.getElementById('english').innerHTML = en
-document.getElementById('arabic').innerHTML = ar
-document.getElementById('albanian').innerHTML = sq
+// document.getElementById('english').innerHTML = en
+// document.getElementById('arabic').innerHTML = ar
+// document.getElementById('albanian').innerHTML = sq
 
-document.getElementById('english')
+// document.getElementById('english')
+
+const render_content = () => {
+	document.getElementById('about').innerHTML = about()
+}
+render_content()
+
+const swap = async (lang) => {
+	await i18next.changeLanguage(lang)
+	render_content()
+}
 
 const sw = (lang) => {
 	document.querySelectorAll('.lb').forEach(b => b.classList.remove('on'))
@@ -68,5 +79,6 @@ const tab = (lang, section) => {
 	window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
+window.swap = swap
 window.sw = sw
 window.tab = tab

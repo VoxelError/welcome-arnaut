@@ -9,5 +9,17 @@
 		"interviews": "Intervista",
 		"awards": "Çmime & Njohje",
 		"photos": "Album fotografik"
+	},
+	"about": {
+		"header": "Prof. Dr. Muhamed Mufaku AlArnaut",
+		"photo_credit": "Foto: Orientalizmi Shqiptar",
+		"bio1": "Studiues kosovar shqiptar sirian dhe profesor i pensionuar i studimeve të Lindjes së Mesme. Lindi në Damask nga një familje shqiptare kosovare — babai nga Peja, nëna nga Vrella e Istogu. U diplomua në gjuhën dhe letërsinë arabe në Universitetin e Damaskut, pastaj mbrojti tri doktorata në Universitetin e Prishtinës: në historinë shqiptare (1977), shkencat filologjike (1981) dhe shkencat historike (1986).",
+		"bio2": "Punoi si lektor i gjuhës arabe në Prishtinë nga 1975 deri më 1987, kur u dëbua nga regjimi i Milošević. Dha mësim në Universitetin Jarmuk dhe Al al-Bejt në Jordani deri në pension (2018). Drejtoi Institutin «Shtëpia e Urtësisë», bashkëpunoi për «Enciklopedinë e Madhe Arabe» dhe ishte anëtar i ASHAK-ut. Presidenti i Kosovës i ndau Medaljen e Meritës në vitin 2012.",
+		"stats": {
+			"books": "Libra",
+			"articles": "Artikuj",
+			"doctorates": "Doktorata",
+			"medal": "Medalja e Meritës"
+		}
 	}
 }
