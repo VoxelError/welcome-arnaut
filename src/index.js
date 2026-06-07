@@ -1,3 +1,5 @@
+import "../styles.scss"
+
 const sw = (lang) => {
 	document.querySelectorAll('.lb').forEach(b => b.classList.remove('on'))
 	document.querySelector('.lb[onclick="sw(\'' + lang + '\')"]').classList.add('on')
