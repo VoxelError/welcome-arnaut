@@ -5,21 +5,1792 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Muhamed Mufaku AlArnaut — Collected Works</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<!-- Language Bar -->
 	<div class="lang-bar">
-		<div id="navv"></div>
 		<button class="lb on" onclick="sw('en')">English<small>English</small></button>
 		<button class="lb" onclick="sw('ar')">العربية<small>Arabic</small></button>
 		<button class="lb" onclick="sw('sq')">Shqip<small>Albanian</small></button>
 	</div>
 
-	<div id="english"></div>
-	<div id="arabic"></div>
-	<div id="albanian"></div>
 
-	<script type="module" src="./src/index"></script>
+	<!--  English  -->
+	<div id="p-en" class="panel on">
+		<div class="site">
+			<header class="hdr">
+				<div class="t1">Muhamed Mufaku AlArnaut</div>
+				<div class="sub">Scholar · Historian · Translator · Cultural Bridge-Builder</div>
+			</header>
+
+			<div class="tab-grid">
+				<button class="tab on" onclick="tab('en','about')">About</button>
+				<button class="tab" onclick="tab('en','authored')">Authored Books</button>
+				<button class="tab" onclick="tab('en','translated')">Translated Books</button>
+				<button class="tab" onclick="tab('en','articles')">Articles</button>
+				<button class="tab" onclick="tab('en','peer')">Peer-Reviewed Papers</button>
+				<button class="tab" onclick="tab('en','conf')">Conference Papers</button>
+				<button class="tab" onclick="tab('en','interviews')">Interviews</button>
+				<button class="tab" onclick="tab('en','awards')">Awards &amp; Recognition</button>
+				<button class="tab" onclick="tab('en','photos')">Photo Album</button>
+			</div>
+
+			<!-- ABOUT -->
+			<div id="en-about" class="tab-content on">
+				<div class="bio-wrap">
+					<div class="photo-col">
+						<img class="photo"
+							src="https://orientalizmi.wordpress.com/wp-content/uploads/2014/02/dr-muhamed-mufaku-arnauti-e1582465691567.jpg"
+							alt="Muhamed Mufaku AlArnaut"
+							onerror="this.style.display='none';document.getElementById('fb-en').style.display='flex'" />
+						<div id="fb-en" class="photo-fb"><span>MA</span></div>
+						<p class="pcredit">Photo: Orientalizmi Shqiptar</p>
+					</div>
+					<div class="bio">
+						<h2>Prof. Dr. Muhamed Mufaku AlArnaut</h2>
+						<div class="names"><span>محمد موفق الأرناؤوط</span><span>Muhamed Mufaku AlArnaut</span><span>b.
+								Damascus, 1952</span></div>
+						<p>Kosovar Albanian Syrian scholar and retired professor of Middle East studies. Born in
+							Damascus to a Kosovo Albanian family — father from Peja, mother from Vrella e Istogu — he
+							studied Arabic language and literature at Damascus University, then earned three doctorates
+							at Pristina University: in Albanian history (1977), philological sciences (1981), and
+							historical sciences (1986).</p>
+						<p>He taught Arabic at Pristina's Faculty of Philology from 1975 until expelled by the Milošević
+							regime in 1987. He subsequently taught at Yarmouk University in Irbid and Al al-Bayt
+							University in Mafraq, Jordan, until retirement in 2018. He directed the House of Wisdom
+							Institute, collaborated on the <em>Great Arab Encyclopaedia</em> in Damascus, and served as
+							a member of both the Syrian Arab Academy of Sciences and the Academy of Sciences and Arts of
+							Kosovo (ASHAK). In the Arab world he is regarded as the foremost expert on Islam in the
+							Balkans.</p>
+						<div class="stats">
+							<div><span class="sv">30+</span><span class="sl">Books</span></div>
+							<div><span class="sv">100+</span><span class="sl">Articles</span></div>
+							<div><span class="sv">3</span><span class="sl">Doctorates</span></div>
+							<div><span class="sv">2012</span><span class="sl">Medal of Merit</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- AUTHORED -->
+			<div id="en-authored" class="tab-content">
+				<div class="sh">Authored Books</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw"><img class="ci"
+								src="https://www.shtepiaelibrit.com/store/img/p/5/5/0/2/5502-large_default.jpg"
+								onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+							<div class="cp ca" style="display:none">
+								<div class="co">🌙</div>
+								<div class="cln"></div>
+								<div class="ct">Figura shqiptare në Lindjen e Mesme</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">History · Albanian</div>
+						<div class="btit"><a
+								href="https://zeri.info/kultura/413783/promovohet-libri-i-muhamed-mufakut-figura-shqiptare-ne-lindjen-e-mesme/"
+								target="_blank">Figura shqiptare në Lindjen e Mesme: shek. XVI–XX</a></div>
+						<div class="bdesc">Albanian Figures in the Middle East, 16th–20th centuries. 30 years of
+							research (1989–2018).</div>
+						<div class="bmeta">Logos-A · Pristina / Skopje / Tirana, 2021</div>
+					</div>
+					<div class="bc">
+						<div class="cw"><img class="ci"
+								src="https://www.shtepiaelibrit.com/store/img/p/1/8/8/5/1885-large_default.jpg"
+								onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+							<div class="cp cb" style="display:none">
+								<div class="co">✦</div>
+								<div class="cln"></div>
+								<div class="ct">Lidhjet letrare shqiptare–arabe</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Literary Studies</div>
+						<div class="btit"><a
+								href="https://www.shtepiaelibrit.com/store/en/reference-books/1885-lidhjet-letrare-shqiptare-arabe-muhamed-mufaku-arnauti.html"
+								target="_blank">Lidhjet letrare shqiptare–arabe</a></div>
+						<div class="bdesc">Albanian–Arabic Literary Relations. 296 pages. ISBN 978-99956-646-0-2.</div>
+						<div class="bmeta">Albanian Centre for Oriental Studies · Tirana, 2009</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cc">
+								<div class="co">⚜</div>
+								<div class="cln"></div>
+								<div class="ct">Nga historia e shqiptarëve të Egjiptit</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">History · Albanian</div>
+						<div class="btit"><a
+								href="https://www.shtepiaelibrit.com/store/en/albanian-history/5502-nga-historia-e-shqiptareve-te-egjiptit-gjate-shekujve-xv-xx-muhamed-mufaku-9789951615594.html"
+								target="_blank">Nga historia e shqiptarëve të Egjiptit gjatë shekujve XV–XX</a></div>
+						<div class="bdesc">From the History of Albanians in Egypt. 172 pp. ISBN 978-9951-615-59-4.</div>
+						<div class="bmeta">ASHAK · Pristina, 2016</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cd">
+								<div class="co">📜</div>
+								<div class="cln"></div>
+								<div class="ct">Albanian Culture in Arabic Script</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Scholarship · Arabic</div>
+						<div class="btit">Albanian Culture in Arabic Script</div>
+						<div class="bdesc">Pioneering study of Albanian cultural production written in Arabic script.
+						</div>
+						<div class="bmeta">Dar al-Bashir · Amman, 1991</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ce">
+								<div class="co">☽</div>
+								<div class="cln"></div>
+								<div class="ct">Arab-Islamic Reflections in Albanian Literature</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Scholarship · Kuwait</div>
+						<div class="btit">Arab-Islamic Reflections in Albanian Literature</div>
+						<div class="bdesc">Islamic influence on Albanian literary tradition. One of the first such
+							studies in the Arab world.</div>
+						<div class="bmeta">Kuwait, c. 1990s</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cf">
+								<div class="co">◈</div>
+								<div class="cln"></div>
+								<div class="ct">Shqiptarët në botën arabe</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">History</div>
+						<div class="btit">Shqiptarët në botën arabe</div>
+						<div class="bdesc">Albanians in the Arab World — a comprehensive survey.</div>
+						<div class="bmeta">Damascus / Pristina</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cg">
+								<div class="co">★</div>
+								<div class="cln"></div>
+								<div class="ct">Islami në Jugosllavi</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">History · Religion</div>
+						<div class="btit">Islami në Jugosllavi</div>
+						<div class="bdesc">Islam in Yugoslavia — history of Muslim communities in the Yugoslav
+							Federation.</div>
+						<div class="bmeta">Pristina</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ch">
+								<div class="co">🏛</div>
+								<div class="cln"></div>
+								<div class="ct">Historia e Beogradit oriental</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">History · Urban</div>
+						<div class="btit">Historia e Beogradit oriental</div>
+						<div class="bdesc">History of Oriental Belgrade — the Islamic and Ottoman heritage of the
+							Serbian capital.</div>
+						<div class="bmeta">Pristina</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cj">
+								<div class="co">⚔</div>
+								<div class="cln"></div>
+								<div class="ct">Kosova epiqendra e konfliktit</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">History · Politics</div>
+						<div class="btit">Kosova epiqendra e konfliktit shqiptaro-serb</div>
+						<div class="bdesc">Kosovo as the epicentre of Albanian-Serbian conflict in the 20th century.
+						</div>
+						<div class="bmeta">Pristina</div>
+					</div>
+				</div>
+				<div class="sh2" style="margin-top:2rem">Further Authored Titles</div>
+				<div class="tg">
+					<div class="ti"><strong>Studime mbi Devshermen</strong> — Studies on the Devshirme System</div>
+					<div class="ti"><strong>Ana tjetër e Ittihad ve Terekki</strong> — The Other Side of the CUP</div>
+					<div class="ti"><strong>Studime në historinë kulturore të islamit në Ballkan</strong></div>
+					<div class="ti"><strong>Tregime popullore rome të Kosovës</strong> — Roma Folk Tales of Kosovo</div>
+					<div class="ti"><strong>Palestina shqiptare</strong> — Albanian poetry with Palestinian themes</div>
+					<div class="ti"><strong>Prapa natës</strong> — Poetry of the Albanians of Syria</div>
+				</div>
+				<p style="margin-top:1.25rem;font-size:13px;color:var(--text3)">Full catalogue: <a
+						href="https://ashak.org/anetaret/muhamed-mufaku/" target="_blank">Academy of Sciences and Arts
+						of Kosovo (ASHAK)</a></p>
+			</div>
+
+			<!-- TRANSLATED -->
+			<div id="en-translated" class="tab-content">
+				<div class="sh">Translated Books</div>
+				<div class="sh2">Albanian → Arabic</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ca">
+								<div class="co">🎭</div>
+								<div class="cln"></div>
+								<div class="ct">Antologjia e poezisë shqipe në Kosovë</div>
+								<div class="cln"></div>
+								<div class="cau">Tr. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poetry Anthology · Arabic</div>
+						<div class="btit">Antologjia e poezisë shqipe në Kosovë</div>
+						<div class="bdesc">Anthology of Albanian Poetry in Kosovo, translated into Arabic.</div>
+						<div class="bmeta">Damascus / Pristina</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cb">
+								<div class="co">📖</div>
+								<div class="cln"></div>
+								<div class="ct">Life in Progress — Anthology of Contemporary Poetry of Kosovo</div>
+								<div class="cln"></div>
+								<div class="cau">Tr. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poetry Anthology · Arabic</div>
+						<div class="btit"><a
+								href="https://www.koha.net/en/shtojca-kulture/panairi-nderkombetar-i-librit-ne-kajro-nje-tryeze-kushtuar-besnik-mustafajt"
+								target="_blank">Life in Progress — Anthology of Contemporary Poetry of Kosovo</a></div>
+						<div class="bdesc">18 Kosovo poets translated into Arabic. Presented at the Cairo International
+							Book Fair.</div>
+						<div class="bmeta">Al'an · Amman, 2025</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cc">
+								<div class="co">🌹</div>
+								<div class="cln"></div>
+								<div class="ct">Palestina shqiptare</div>
+								<div class="cln"></div>
+								<div class="cau">Ed. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poetry · Arabic</div>
+						<div class="btit">Palestina shqiptare</div>
+						<div class="bdesc">Panorama of Albanian poetry with Palestinian motifs, translated for Arab
+							audiences.</div>
+						<div class="bmeta">Damascus</div>
+					</div>
+				</div>
+				<div class="sh2">Arabic → Albanian</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cd">
+								<div class="co">🌙</div>
+								<div class="cln"></div>
+								<div class="ct">Tregime siriane</div>
+								<div class="cln"></div>
+								<div class="cau">Tr. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Fiction · Albanian</div>
+						<div class="btit">Tregime siriane</div>
+						<div class="bdesc">Syrian Short Stories — selection, preface and translation from Arabic into
+							Albanian.</div>
+						<div class="bmeta">Pristina</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ce">
+								<div class="co">🏜</div>
+								<div class="cln"></div>
+								<div class="ct">Deti në shkretëtirë</div>
+								<div class="cln"></div>
+								<div class="cau">Tr. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poetry · Albanian</div>
+						<div class="btit">Deti në shkretëtirë</div>
+						<div class="bdesc">The Sea in the Desert — Arabic poetry anthology translated into Albanian.
+						</div>
+						<div class="bmeta">Pristina</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cf">
+								<div class="co">✦</div>
+								<div class="cln"></div>
+								<div class="ct">Antologjia e poezisë së re arabe</div>
+								<div class="cln"></div>
+								<div class="cau">Tr. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poetry Anthology · Albanian</div>
+						<div class="btit">Antologjia e poezisë së re arabe</div>
+						<div class="bdesc">Anthology of Modern Arabic Poetry translated into Albanian.</div>
+						<div class="bmeta">Pristina / Belgrade, 1983</div>
+					</div>
+				</div>
+				<div class="sh2">Arabic → Serbian</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cg">
+								<div class="co">◈</div>
+								<div class="cln"></div>
+								<div class="ct">Savremena Poezija Sirije</div>
+								<div class="cln"></div>
+								<div class="cau">Tr. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Anthology · Serbian</div>
+						<div class="btit"><a
+								href="https://www.amazon.com/SAVREMENA-POEZIJA-SIRIJE-Muhamed-MUFAKU/dp/B005PWQQ60"
+								target="_blank">Savremena Poezija Sirije</a></div>
+						<div class="bdesc">Contemporary Poetry of Syria — translated from Arabic for Balkan readers.
+						</div>
+						<div class="bmeta">Bagdala · Kruševac, 1983</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ch">
+								<div class="co">🌿</div>
+								<div class="cln"></div>
+								<div class="ct">Prapa natës</div>
+								<div class="cln"></div>
+								<div class="cau">Ed. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poetry · Albanian</div>
+						<div class="btit">Prapa natës</div>
+						<div class="bdesc">Behind the Night — poetry of the Albanians of Syria, compiled and translated
+							by AlArnaut.</div>
+						<div class="bmeta">Pristina</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">📚</div>
+					<p><strong>More translations to be added.</strong> Please contact us to contribute bibliographic
+						data.</p>
+				</div>
+			</div>
+
+			<!-- ARTICLES -->
+			<div id="en-articles" class="tab-content">
+				<div class="sh">Articles &amp; Essays</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="at"><a
+									href="https://www.koha.net/en/shtojca-kulture/arnautet-e-lindjes-se-mesme"
+									target="_blank">Arnauts of the Middle East</a><span class="pill">EN</span></div>
+							<div class="ap">Koha.net · September 2024</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="at"><a
+									href="https://www.gazetaexpress.com/en/muhamed-mufaku-mbi-etnonimin-arnaut-ne-lindjen-e-mesme/"
+									target="_blank">On the Arnaut Ethnonym in the Middle East</a><span
+									class="pill">EN</span></div>
+							<div class="ap">Gazeta Express · Lecture at the Institute of Albanology, 2024</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2022</div>
+						<div>
+							<div class="at"><a
+									href="https://www.koha.net/en/shtojca-kulture/abdulatif-arnauti-ndash-zeri-i-letersise-shqipe-ne-arabisht-sinonim-i-shqiptareve-ne-siri"
+									target="_blank">Abdulatif Arnauti — The Voice of Albanian Literature in
+									Arabic</a><span class="pill">EN</span></div>
+							<div class="ap">Koha.net · March 2022</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2021</div>
+						<div>
+							<div class="at"><a
+									href="https://www.koha.net/en/kulture/abdulatif-arnauti-70-vjet-ne-sherbim-te-kultures-shqiptare"
+									target="_blank">Abdulatif Arnauti — 70 Years at the Service of Albanian
+									Culture</a><span class="pill">EN</span></div>
+							<div class="ap">Koha.net · January 2021</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2009</div>
+						<div>
+							<div class="at"><a
+									href="https://orientalizmi.wordpress.com/2012/01/12/maruf-arnauti-romancieri-i-pare-ne-letersine-siriane/"
+									target="_blank">Maruf Arnauti — The First Novelist in Syrian Literature</a><span
+									class="pill">SQ</span></div>
+							<div class="ap">Revista URA, No. 2 · Albanian Centre for Oriental Studies, Tirana</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1978</div>
+						<div>
+							<div class="at">The Religious Question in Albania<span class="pill">AR</span></div>
+							<div class="ap">Al-Arabi Journal · Kuwait</div>
+						</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">✍️</div>
+					<p><strong>100+ articles documented.</strong> A full list is being compiled. Please contact us to
+						contribute bibliographic entries.</p>
+				</div>
+			</div>
+
+			<!-- PEER-REVIEWED -->
+			<div id="en-peer" class="tab-content">
+				<div class="sh">Research Papers in Peer-Reviewed Journals</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">1994</div>
+						<div>
+							<div class="at"><a href="https://academic.oup.com/jis/article-abstract/5/2/242/748430"
+									target="_blank">Islam and Muslims in Bosnia 1878–1918: Two Hijras and Two
+									Fatwās</a><span class="pill">EN</span></div>
+							<div class="ap">Journal of Islamic Studies, Vol. 5, No. 2, pp. 242–253 · Oxford University
+								Press</div>
+							<div class="note">DOI: 10.1093/jis/5.2.242 · Cited 11+ times</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1990</div>
+						<div>
+							<div class="at">A Contribution to the Bibliography of Yugoslav Oriental Studies 1966–1990
+								(Arabic Studies in Albanian Language in Yugoslavia)</div>
+							<div class="ap">Prilozi za orijentalnu filologiju · Sarajevo</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1981</div>
+						<div>
+							<div class="at">Oriental Studies and Publications of the Institute of Albanology</div>
+							<div class="ap">Studime Orientale · Pristina</div>
+						</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🔬</div>
+					<p><strong>Additional peer-reviewed papers to be added.</strong> Papers published in Arabic-language
+						academic journals are being catalogued.</p>
+				</div>
+			</div>
+
+			<!-- CONFERENCE -->
+			<div id="en-conf" class="tab-content">
+				<div class="sh">Research Papers Presented at Scientific Conferences</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="at">On the Arnaut Ethnonym in the Middle East</div>
+							<div class="ap">International Seminar on Albanian Language, Literature and Culture ·
+								Institute of Albanology, Pristina</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2014</div>
+						<div>
+							<div class="at">Arab-Balkan Relations: Historical and Cultural Dimensions</div>
+							<div class="ap">1st International Symposium on Arab-Balkan Relations · Doha, Qatar</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1987</div>
+						<div>
+							<div class="at">Literary Activity of Albanian Writers in Syria</div>
+							<div class="ap">League of Writers · Damascus, Syria</div>
+							<div class="note">Documented participation alongside Bedri Hysa and Abdulatif Arnauti</div>
+						</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🎓</div>
+					<p><strong>Full conference record to be added.</strong> Prof. AlArnaut participated regularly in
+						international academic conferences across the Balkans and Arab world.</p>
+				</div>
+			</div>
+
+			<!-- INTERVIEWS -->
+			<div id="en-interviews" class="tab-content">
+				<div class="sh">Interviews</div>
+				<div class="interview-list">
+					<div class="interview-card">
+						<div class="ic-title"><a
+								href="https://telegrafi.com/en/Muhamed-Mufaku,-director-of-the-Institute-of-Oriental-Studies-in-Pristina/"
+								target="_blank">Muhamed Mufaku AlArnaut, Director of the Institute of Oriental Studies
+								in Pristina</a><span class="ic-badge">EN</span></div>
+						<div class="ic-meta">Telegrafi · October 2018 · On his appointment as director and scholarly
+							career</div>
+					</div>
+					<div class="interview-card">
+						<div class="ic-title"><a href="https://telegrafi.com/en/shqiptaret-ne-siri-assad-po-na-vret/"
+								target="_blank">Albanians in Syria: Assad is Killing Us</a><span
+								class="ic-badge">EN</span></div>
+						<div class="ic-meta">Telegrafi · 2012 · On the Albanian community in Syria during the civil war
+						</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🎙️</div>
+					<p><strong>More interviews to be added.</strong> Video and print interviews from Kosovo, Albania,
+						Jordan, and Syria are being collected.</p>
+				</div>
+			</div>
+
+			<!-- AWARDS -->
+			<div id="en-awards" class="tab-content">
+				<div class="sh">Awards &amp; Recognition</div>
+				<div class="awards-list">
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🏅</span>
+							<div class="award-year">2012<small>Award</small></div>
+						</div>
+						<div class="award-body">
+							<h3>Medal of Merit — Republic of Kosovo</h3>
+							<p>Awarded by the President of Kosovo in recognition of exceptional contributions to the
+								promotion of Albanian history, culture, and literature across the Arab world and the
+								broader Middle East. One of Kosovo's highest civilian honours.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🏛️</span>
+							<div class="award-year">2005<small>Membership</small></div>
+						</div>
+						<div class="award-body">
+							<h3>Corresponding Member — Syrian Arab Academy of Sciences, Damascus</h3>
+							<p>Elected as corresponding member of the Arab Academy of Sciences (founded 1919), one of
+								the oldest and most prestigious Arabic-language scientific institutions, in recognition
+								of his scholarship on Arab–Balkan literary and historical relations.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🎓</span>
+							<div class="award-year">2005<small>Membership</small></div>
+						</div>
+						<div class="award-body">
+							<h3>External Member — Academy of Sciences and Arts of Kosovo (ASHAK)</h3>
+							<p>Elected external member of ASHAK, the highest scientific and cultural institution of
+								Kosovo, acknowledging his lifelong scholarly contribution to Albanian studies and the
+								connection between Albanian and Arab intellectual traditions.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">📚</span>
+							<div class="award-year">2018<small>Appointment</small></div>
+						</div>
+						<div class="award-body">
+							<h3>Director — Institute of Oriental Studies, Pristina</h3>
+							<p>Elected by the Assembly of the Institute of Oriental Studies in Pristina as its director
+								— a recognition of his decades of pioneering research bridging Balkan and Arab scholarly
+								traditions.</p>
+						</div>
+					</div>
+				</div>
+				<div class="sh2" style="margin-top:2rem">Academic &amp; Editorial Memberships</div>
+				<div class="membership-grid">
+					<div class="mem-card">
+						<h4>Editorial Board — Prilozi za orijentalnu filologiju</h4>
+						<p>Sarajevo · Peer-reviewed journal of Oriental philology</p>
+					</div>
+					<div class="mem-card">
+						<h4>Editorial Board — Studime Orientale</h4>
+						<p>Pristina · Journal of Oriental Studies</p>
+					</div>
+					<div class="mem-card">
+						<h4>Senate Member — Al al-Bayt University</h4>
+						<p>Mafraq, Jordan</p>
+					</div>
+					<div class="mem-card">
+						<h4>Council of Deans — Al al-Bayt University</h4>
+						<p>Mafraq, Jordan</p>
+					</div>
+					<div class="mem-card">
+						<h4>Member — Association of Orientalists of Kosovo</h4>
+						<p>Pristina</p>
+					</div>
+					<div class="mem-card">
+						<h4>Member — Association for Research and Studies, League of Writers of Syria</h4>
+						<p>Damascus</p>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🏆</div>
+					<p><strong>Additional awards and honours to be added.</strong> Please contact us with any awards or
+						recognitions not listed here.</p>
+				</div>
+			</div>
+
+			<!-- PHOTOS -->
+			<div id="en-photos" class="tab-content">
+				<div class="sh">Photo Album</div>
+				<div class="gallery">
+					<div class="gallery-item">
+						<div class="gi-icon">🖼️</div>
+						<div class="gi-label">Author portrait — Damascus, c. 1980s</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📚</div>
+						<div class="gi-label">Book launch — Pristina, 2021</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🎓</div>
+						<div class="gi-label">At the University of Pristina, c. 1985</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🖼️</div>
+						<div class="gi-label">With scholars at the League of Writers, Damascus, 1987</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🏛️</div>
+						<div class="gi-label">At Al al-Bayt University, Jordan</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📜</div>
+						<div class="gi-label">Medal of Merit ceremony — Pristina, 2012</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🌍</div>
+						<div class="gi-label">International Seminar on Albanian Language — Pristina</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📖</div>
+						<div class="gi-label">Cairo International Book Fair, 2025</div>
+					</div>
+				</div>
+				<p class="gallery-note">To add real photos: replace each placeholder with an &lt;img&gt; tag pointing to
+					your uploaded image file. Recommended: 800×600px or larger, JPG or WebP format.</p>
+			</div>
+
+			<footer>
+				<p>Muhamed Mufaku AlArnaut — Collected Works</p>
+				<p><a href="https://en.wikipedia.org/wiki/Muhammad_Mufaku" target="_blank">Wikipedia</a> · <a
+						href="https://ashak.org/anetaret/muhamed-mufaku/" target="_blank">ASHAK</a> · <a
+						href="https://www.researchgate.net/profile/Muhamed-Mufaku" target="_blank">ResearchGate</a> · <a
+						href="https://orientalizmi.wordpress.com/2013/07/06/dr-muhamed-mufaku-arnauti/"
+						target="_blank">Orientalizmi Shqiptar</a></p>
+				<p style="font-size:11px;margin-top:.5rem">Photo: Orientalizmi Shqiptar · Book covers: publishers' sites
+				</p>
+			</footer>
+		</div>
+	</div><!-- /en -->
+
+
+	<!-- Arabic -->
+	<div id="p-ar" class="panel ar-panel">
+		<div class="site">
+			<header class="hdr">
+				<div class="t1ar">محمد موفق الأرناؤوط</div>
+				<div class="subar">مؤرخ · أكاديمي · مترجم · جسر ثقافي</div>
+			</header>
+			<div class="tab-grid">
+				<button class="tab on" onclick="tab('ar','about')">نبذة</button>
+				<button class="tab" onclick="tab('ar','authored')">الكتب المؤلَّفة</button>
+				<button class="tab" onclick="tab('ar','translated')">الكتب المترجَمة</button>
+				<button class="tab" onclick="tab('ar','articles')">المقالات</button>
+				<button class="tab" onclick="tab('ar','peer')">أبحاث محكَّمة</button>
+				<button class="tab" onclick="tab('ar','conf')">أبحاث مؤتمرات</button>
+				<button class="tab" onclick="tab('ar','interviews')">مقابلات</button>
+				<button class="tab" onclick="tab('ar','awards')">الجوائز والتكريم</button>
+				<button class="tab" onclick="tab('ar','photos')">ألبوم الصور</button>
+			</div>
+
+			<div id="ar-about" class="tab-content on">
+				<div class="bio-wrap">
+					<div class="photo-col">
+						<img class="photo"
+							src="https://orientalizmi.wordpress.com/wp-content/uploads/2014/02/dr-muhamed-mufaku-arnauti-e1582465691567.jpg"
+							alt="محمد موفق الأرناؤوط"
+							onerror="this.style.display='none';document.getElementById('fb-ar').style.display='flex'" />
+						<div id="fb-ar" class="photo-fb"><span style="font-size:38px">م أ</span></div>
+						<p class="pcredit" style="font-family:'Noto Naskh Arabic',serif">الصورة: أورينتاليزمي شقيبتار
+						</p>
+					</div>
+					<div class="bio">
+						<div class="h2ar">الأستاذ الدكتور محمد موفق الأرناؤوط</div>
+						<div class="names"><span>Muhamed Mufaku AlArnaut</span><span>Muhammad Mufaku
+								al-Arnaut</span><span>دمشق 1952</span></div>
+						<p class="par">باحث كوسوفي ألباني سوري وأستاذ متقاعد في دراسات الشرق الأوسط. وُلد في دمشق لعائلة
+							ألبانية كوسوفية — والده من بيا، ووالدته من فريلا إيستوغو. تخرّج من جامعة دمشق قسم اللغة
+							العربية وآدابها، ثم نال ثلاث درجات دكتوراه من جامعة بريشتينا: في التاريخ الألباني (1977)،
+							والعلوم الفيلولوجية (1981)، والعلوم التاريخية (1986).</p>
+						<p class="par">عمل مدرّساً للغة العربية ببريشتينا من 1975 حتى طُرد عام 1987. انتقل للتدريس في
+							جامعة اليرموك ثم جامعة آل البيت بالأردن حتى تقاعده 2018. أدار معهد بيت الحكمة، وأسهم في
+							«الموسوعة العربية الكبرى»، وكان عضواً في مجمع اللغة العربية السوري وأكاديمية العلوم والفنون
+							في كوسوفو.</p>
+						<div class="stats">
+							<div><span class="sv">+30</span><span class="sl slar">كتاباً</span></div>
+							<div><span class="sv">+100</span><span class="sl slar">مقالاً</span></div>
+							<div><span class="sv">3</span><span class="sl slar">دكتوراه</span></div>
+							<div><span class="sv">2012</span><span class="sl slar">وسام الاستحقاق</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="ar-authored" class="tab-content">
+				<div class="shar">الكتب المؤلَّفة</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw"><img class="ci"
+								src="https://www.shtepiaelibrit.com/store/img/p/5/5/0/2/5502-large_default.jpg"
+								onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+							<div class="cp ca" style="display:none">
+								<div class="co">🌙</div>
+								<div class="cln"></div>
+								<div class="ctar">الشخصيات الألبانية في الشرق الأوسط</div>
+								<div class="cln"></div>
+								<div class="cauar">محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">تاريخ</div>
+						<div class="btitar"><a href="https://zeri.info/kultura/413783/" target="_blank">الشخصيات
+								الألبانية في الشرق الأوسط: القرنان XVI–XX</a></div>
+						<div class="bdescAr">ثلاثون عاماً من البحث (1989–2018).</div>
+						<div class="bmetaAr">لوغوس-أ · بريشتينا، 2021</div>
+					</div>
+					<div class="bc">
+						<div class="cw"><img class="ci"
+								src="https://www.shtepiaelibrit.com/store/img/p/1/8/8/5/1885-large_default.jpg"
+								onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+							<div class="cp cb" style="display:none">
+								<div class="co">✦</div>
+								<div class="cln"></div>
+								<div class="ctar">الصلات الأدبية الألبانية-العربية</div>
+								<div class="cln"></div>
+								<div class="cauar">محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">دراسات أدبية</div>
+						<div class="btitar"><a
+								href="https://www.shtepiaelibrit.com/store/en/reference-books/1885-lidhjet-letrare-shqiptare-arabe-muhamed-mufaku-arnauti.html"
+								target="_blank">الصلات الأدبية الألبانية-العربية</a></div>
+						<div class="bdescAr">296 صفحة. ISBN 978-99956-646-0-2.</div>
+						<div class="bmetaAr">المركز الألباني للدراسات الشرقية · تيرانا، 2009</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cc">
+								<div class="co">⚜</div>
+								<div class="cln"></div>
+								<div class="ctar">من تاريخ الألبان في مصر XV–XX</div>
+								<div class="cln"></div>
+								<div class="cauar">محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">تاريخ</div>
+						<div class="btitar"><a
+								href="https://www.shtepiaelibrit.com/store/en/albanian-history/5502-nga-historia-e-shqiptareve-te-egjiptit-gjate-shekujve-xv-xx-muhamed-mufaku-9789951615594.html"
+								target="_blank">من تاريخ الألبان في مصر خلال القرنين XV–XX</a></div>
+						<div class="bdescAr">172 صفحة.</div>
+						<div class="bmetaAr">أكاديمية كوسوفو · 2016</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cd">
+								<div class="co">📜</div>
+								<div class="cln"></div>
+								<div class="ctar">الثقافة الألبانية بالحرف العربي</div>
+								<div class="cln"></div>
+								<div class="cauar">محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">بحث</div>
+						<div class="btitar">الثقافة الألبانية بالحرف العربي</div>
+						<div class="bdescAr">دراسة رائدة في الإنتاج الثقافي الألباني بالحروف العربية.</div>
+						<div class="bmetaAr">دار البشير · عمّان، 1991</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ce">
+								<div class="co">☽</div>
+								<div class="cln"></div>
+								<div class="ctar">الانعكاسات العربية الإسلامية في الأدب الألباني</div>
+								<div class="cln"></div>
+								<div class="cauar">محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">بحث</div>
+						<div class="btitar">الانعكاسات العربية الإسلامية في الأدب الألباني</div>
+						<div class="bdescAr">من أوائل الدراسات في هذا المجال في العالم العربي.</div>
+						<div class="bmetaAr">الكويت، تسعينيات القرن الماضي</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cf">
+								<div class="co">◈</div>
+								<div class="cln"></div>
+								<div class="ctar">الألبان في العالم العربي</div>
+								<div class="cln"></div>
+								<div class="cauar">محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">تاريخ</div>
+						<div class="btitar">الألبان في العالم العربي</div>
+						<div class="bdescAr">مسح شامل للوجود الألباني في الأراضي العربية.</div>
+						<div class="bmetaAr">دمشق / بريشتينا</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="ar-translated" class="tab-content">
+				<div class="shar">الكتب المترجَمة</div>
+				<div class="sh2ar">من الألبانية إلى العربية</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ca">
+								<div class="co">🎭</div>
+								<div class="cln"></div>
+								<div class="ctar">مختارات من الشعر الألباني في كوسوفو</div>
+								<div class="cln"></div>
+								<div class="cauar">ترجمة: محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">شعر · عربي</div>
+						<div class="btitar">مختارات من الشعر الألباني في كوسوفو</div>
+						<div class="bdescAr">ترجمة مختارات شعرية ألبانية إلى العربية.</div>
+						<div class="bmetaAr">دمشق / بريشتينا</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cb">
+								<div class="co">📖</div>
+								<div class="cln"></div>
+								<div class="ctar">الحياة في تقدّم — مختارات من شعر كوسوفو</div>
+								<div class="cln"></div>
+								<div class="cauar">ترجمة: محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">شعر · عربي</div>
+						<div class="btitar"><a
+								href="https://www.koha.net/en/shtojca-kulture/panairi-nderkombetar-i-librit-ne-kajro-nje-tryeze-kushtuar-besnik-mustafajt"
+								target="_blank">الحياة في تقدّم — مختارات من شعر كوسوفو المعاصر</a></div>
+						<div class="bdescAr">18 شاعراً كوسوفياً. معرض القاهرة الدولي للكتاب.</div>
+						<div class="bmetaAr">الآن · عمّان، 2025</div>
+					</div>
+				</div>
+				<div class="sh2ar">من العربية إلى الألبانية</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cd">
+								<div class="co">🌙</div>
+								<div class="cln"></div>
+								<div class="ctar">قصص سورية</div>
+								<div class="cln"></div>
+								<div class="cauar">ترجمة: محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">قصة · ألبانية</div>
+						<div class="btitar">قصص سورية</div>
+						<div class="bdescAr">مختارات من القصة القصيرة السورية مترجمة إلى الألبانية.</div>
+						<div class="bmetaAr">بريشتينا</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ce">
+								<div class="co">🏜</div>
+								<div class="cln"></div>
+								<div class="ctar">البحر في الصحراء</div>
+								<div class="cln"></div>
+								<div class="cauar">ترجمة: محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">شعر · ألبانية</div>
+						<div class="btitar">البحر في الصحراء</div>
+						<div class="bdescAr">مختارات من الشعر العربي مترجمة إلى الألبانية.</div>
+						<div class="bmetaAr">بريشتينا</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cf">
+								<div class="co">✦</div>
+								<div class="cln"></div>
+								<div class="ctar">مختارات من الشعر العربي الحديث</div>
+								<div class="cln"></div>
+								<div class="cauar">ترجمة: محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">شعر · ألبانية</div>
+						<div class="btitar">مختارات من الشعر العربي الحديث</div>
+						<div class="bdescAr">أنثولوجيا الشعر العربي المعاصر بالألبانية.</div>
+						<div class="bmetaAr">بريشتينا / بلغراد، 1983</div>
+					</div>
+				</div>
+				<div class="sh2ar">من العربية إلى الصربية</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cg">
+								<div class="co">◈</div>
+								<div class="cln"></div>
+								<div class="ctar">الشعر السوري المعاصر</div>
+								<div class="cln"></div>
+								<div class="cauar">ترجمة: محمد موفق الأرناؤوط</div>
+							</div>
+						</div>
+						<div class="btagAr">شعر · صربية</div>
+						<div class="btitar"><a
+								href="https://www.amazon.com/SAVREMENA-POEZIJA-SIRIJE-Muhamed-MUFAKU/dp/B005PWQQ60"
+								target="_blank">الشعر السوري المعاصر</a></div>
+						<div class="bdescAr">مختارات من الشعر السوري للقارئ البلقاني.</div>
+						<div class="bmetaAr">باغدالا · كروشيفاتس، 1983</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="ar-articles" class="tab-content">
+				<div class="shar">المقالات والدراسات</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="atar"><a
+									href="https://www.koha.net/en/shtojca-kulture/arnautet-e-lindjes-se-mesme"
+									target="_blank">الأرناؤوط في الشرق الأوسط</a><span class="pill pillar">EN</span>
+							</div>
+							<div class="apar">كوها نت · سبتمبر 2024</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="atar"><a
+									href="https://www.gazetaexpress.com/en/muhamed-mufaku-mbi-etnonimin-arnaut-ne-lindjen-e-mesme/"
+									target="_blank">في اتنونيم «الأرناؤوط» في الشرق الأوسط</a><span
+									class="pill pillar">EN</span></div>
+							<div class="apar">غازيتا إكسبريس · 2024</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2022</div>
+						<div>
+							<div class="atar"><a
+									href="https://www.koha.net/en/shtojca-kulture/abdulatif-arnauti-ndash-zeri-i-letersise-shqipe-ne-arabisht-sinonim-i-shqiptareve-ne-siri"
+									target="_blank">عبد اللطيف الأرناؤوط — صوت الأدب الألباني بالعربية</a><span
+									class="pill pillar">EN</span></div>
+							<div class="apar">كوها نت · مارس 2022</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2009</div>
+						<div>
+							<div class="atar"><a
+									href="https://orientalizmi.wordpress.com/2012/01/12/maruf-arnauti-romancieri-i-pare-ne-letersine-siriane/"
+									target="_blank">معروف الأرناؤوط — أول روائي في الأدب السوري</a><span
+									class="pill pillar">SQ</span></div>
+							<div class="apar">مجلة أورا، العدد 2 · تيرانا</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1978</div>
+						<div>
+							<div class="atar">المسألة الدينية في ألبانيا<span class="pill pillar">AR</span></div>
+							<div class="apar">مجلة العربي · الكويت</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="ar-peer" class="tab-content">
+				<div class="shar">أبحاث في مجلات علمية محكَّمة</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">1994</div>
+						<div>
+							<div class="atar"><a href="https://academic.oup.com/jis/article-abstract/5/2/242/748430"
+									target="_blank">الإسلام والمسلمون في البوسنة 1878–1918: هجرتان وفتوتان</a><span
+									class="pill pillar">EN</span></div>
+							<div class="apar">مجلة الدراسات الإسلامية، مج. 5، ع. 2 · مطبعة جامعة أكسفورد</div>
+							<div class="notear">DOI: 10.1093/jis/5.2.242 · استُشهد به أكثر من 11 مرة</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1990</div>
+						<div>
+							<div class="atar">مساهمة في ببليوغرافيا الدراسات الشرقية اليوغوسلافية 1966–1990</div>
+							<div class="apar">Prilozi za orijentalnu filologiju · سراييفو</div>
+						</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🔬</div>
+					<p style="font-family:'Noto Naskh Arabic',serif"><strong>تجري إضافة المزيد من الأبحاث
+							المحكَّمة.</strong></p>
+				</div>
+			</div>
+
+			<div id="ar-conf" class="tab-content">
+				<div class="shar">أبحاث مقدَّمة في مؤتمرات علمية</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="atar">في اتنونيم «الأرناؤوط» في الشرق الأوسط</div>
+							<div class="apar">السيمنار الدولي للغة الألبانية · معهد الألبانولوجيا، بريشتينا</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2014</div>
+						<div>
+							<div class="atar">العلاقات العربية-البلقانية: الأبعاد التاريخية والثقافية</div>
+							<div class="apar">الندوة الدولية الأولى للعلاقات العربية-البلقانية · الدوحة، قطر</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1987</div>
+						<div>
+							<div class="atar">النشاط الأدبي للكتّاب الألبان في سوريا</div>
+							<div class="apar">اتحاد الكتّاب · دمشق، سوريا</div>
+						</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🎓</div>
+					<p style="font-family:'Noto Naskh Arabic',serif"><strong>قائمة المؤتمرات الكاملة قيد
+							الإعداد.</strong></p>
+				</div>
+			</div>
+
+			<div id="ar-interviews" class="tab-content">
+				<div class="shar">مقابلات</div>
+				<div class="interview-list">
+					<div class="interview-card">
+						<div class="ic-titlear"><a
+								href="https://telegrafi.com/en/Muhamed-Mufaku,-director-of-the-Institute-of-Oriental-Studies-in-Pristina/"
+								target="_blank">محمد موفق الأرناؤوط، مديراً لمعهد الدراسات الشرقية في بريشتينا</a><span
+								class="ic-badge">EN</span></div>
+						<div class="ic-metaar">تلغرافي · أكتوبر 2018</div>
+					</div>
+					<div class="interview-card">
+						<div class="ic-titlear"><a href="https://telegrafi.com/en/shqiptaret-ne-siri-assad-po-na-vret/"
+								target="_blank">الألبان في سوريا: الأسد يقتلنا</a><span class="ic-badge">EN</span></div>
+						<div class="ic-metaar">تلغرافي · 2012</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🎙️</div>
+					<p style="font-family:'Noto Naskh Arabic',serif"><strong>تجري إضافة مزيد من المقابلات.</strong></p>
+				</div>
+			</div>
+
+			<div id="ar-awards" class="tab-content">
+				<div class="shar">الجوائز والتكريم</div>
+				<div class="awards-list">
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🏅</span>
+							<div class="award-year-ar">2012<small>جائزة</small></div>
+						</div>
+						<div class="award-body">
+							<div class="h3ar">وسام الاستحقاق — جمهورية كوسوفو</div>
+							<p class="par">مُنح من رئيس جمهورية كوسوفو تقديراً للإسهامات الاستثنائية في نشر التاريخ
+								والثقافة والأدب الألباني في العالم العربي والشرق الأوسط. ويُعدّ من أرفع الأوسمة المدنية
+								في كوسوفو.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🏛️</span>
+							<div class="award-year-ar">2005<small>عضوية</small></div>
+						</div>
+						<div class="award-body">
+							<div class="h3ar">عضو مراسل — مجمع اللغة العربية، دمشق</div>
+							<p class="par">انتُخب عضواً مراسلاً في مجمع اللغة العربية (تأسّس 1919)، أعرق المؤسسات
+								العلمية في العالم العربي، اعترافاً بأبحاثه في العلاقات الأدبية والتاريخية
+								العربية-البلقانية.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🎓</span>
+							<div class="award-year-ar">2005<small>عضوية</small></div>
+						</div>
+						<div class="award-body">
+							<div class="h3ar">عضو خارجي — أكاديمية العلوم والفنون في كوسوفو (أشاك)</div>
+							<p class="par">انتُخب عضواً خارجياً في أشاك، أعلى مؤسسة علمية وثقافية في كوسوفو، تقديراً
+								لمسيرته العلمية في الدراسات الألبانية وربطها بالتراث العربي.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">📚</span>
+							<div class="award-year-ar">2018<small>تعيين</small></div>
+						</div>
+						<div class="award-body">
+							<div class="h3ar">مدير — معهد الدراسات الشرقية، بريشتينا</div>
+							<p class="par">انتخبه مجلس معهد الدراسات الشرقية في بريشتينا مديراً له، اعترافاً بعقود من
+								البحث الرائد في ربط الفكر البلقاني والعربي.</p>
+						</div>
+					</div>
+				</div>
+				<div class="sh2ar" style="margin-top:2rem">العضويات الأكاديمية والتحريرية</div>
+				<div class="membership-grid">
+					<div class="mem-card">
+						<div class="h4ar">هيئة التحرير — Prilozi za orijentalnu filologiju</div>
+						<p class="par">سراييفو · مجلة الفيلولوجيا الشرقية المحكَّمة</p>
+					</div>
+					<div class="mem-card">
+						<div class="h4ar">هيئة التحرير — الدراسات الشرقية (Studime Orientale)</div>
+						<p class="par">بريشتينا</p>
+					</div>
+					<div class="mem-card">
+						<div class="h4ar">عضو مجلس الشيوخ — جامعة آل البيت</div>
+						<p class="par">المفرق، الأردن</p>
+					</div>
+					<div class="mem-card">
+						<div class="h4ar">عضو مجلس العمداء — جامعة آل البيت</div>
+						<p class="par">المفرق، الأردن</p>
+					</div>
+					<div class="mem-card">
+						<div class="h4ar">عضو — رابطة المستشرقين الكوسوفيين</div>
+						<p class="par">بريشتينا</p>
+					</div>
+					<div class="mem-card">
+						<div class="h4ar">عضو — جمعية البحوث والدراسات، اتحاد كتّاب سوريا</div>
+						<p class="par">دمشق</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="ar-photos" class="tab-content">
+				<div class="shar">ألبوم الصور</div>
+				<div class="gallery">
+					<div class="gallery-item">
+						<div class="gi-icon">🖼️</div>
+						<div class="gi-label" style="font-family:'Noto Naskh Arabic',serif">صورة شخصية — دمشق،
+							الثمانينيات</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📚</div>
+						<div class="gi-label" style="font-family:'Noto Naskh Arabic',serif">حفل إطلاق كتاب — بريشتينا،
+							2021</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🎓</div>
+						<div class="gi-label" style="font-family:'Noto Naskh Arabic',serif">في جامعة بريشتينا، حوالي
+							1985</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🖼️</div>
+						<div class="gi-label" style="font-family:'Noto Naskh Arabic',serif">مع أدباء في اتحاد الكتّاب،
+							دمشق، 1987</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🏛️</div>
+						<div class="gi-label" style="font-family:'Noto Naskh Arabic',serif">في جامعة آل البيت، الأردن
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📜</div>
+						<div class="gi-label" style="font-family:'Noto Naskh Arabic',serif">حفل وسام الاستحقاق —
+							بريشتينا، 2012</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🌍</div>
+						<div class="gi-label" style="font-family:'Noto Naskh Arabic',serif">السيمنار الدولي للغة
+							الألبانية</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📖</div>
+						<div class="gi-label" style="font-family:'Noto Naskh Arabic',serif">معرض القاهرة الدولي للكتاب،
+							2025</div>
+					</div>
+				</div>
+				<p class="gallery-notear">لإضافة صور حقيقية: استبدل كل عنصر مؤقت بوسم &lt;img&gt; يشير إلى ملف الصورة
+					المُحمَّل.</p>
+			</div>
+
+			<footer class="footar">
+				<p>محمد موفق الأرناؤوط — الأعمال الكاملة</p>
+				<p><a href="https://en.wikipedia.org/wiki/Muhammad_Mufaku" target="_blank">ويكيبيديا</a> · <a
+						href="https://ashak.org/anetaret/muhamed-mufaku/" target="_blank">أشاك</a> · <a
+						href="https://www.researchgate.net/profile/Muhamed-Mufaku" target="_blank">ريسيرش غيت</a></p>
+			</footer>
+		</div>
+	</div><!-- /ar -->
+
+
+	<!-- Albanian -->
+	<div id="p-sq" class="panel">
+		<div class="site">
+			<header class="hdr">
+				<div class="t1">Muhamed Mufaku AlArnaut</div>
+				<div class="sub">Studiues · Historian · Përkthyes · Ndërtues Urash Kulturore</div>
+			</header>
+			<div class="tab-grid">
+				<button class="tab on" onclick="tab('sq','about')">Rreth autorit</button>
+				<button class="tab" onclick="tab('sq','authored')">Librat e autoruar</button>
+				<button class="tab" onclick="tab('sq','translated')">Librat e përkthyer</button>
+				<button class="tab" onclick="tab('sq','articles')">Artikuj</button>
+				<button class="tab" onclick="tab('sq','peer')">Revista shkencore</button>
+				<button class="tab" onclick="tab('sq','conf')">Konferenca</button>
+				<button class="tab" onclick="tab('sq','interviews')">Intervista</button>
+				<button class="tab" onclick="tab('sq','awards')">Çmime &amp; Njohje</button>
+				<button class="tab" onclick="tab('sq','photos')">Album fotografik</button>
+			</div>
+
+			<div id="sq-about" class="tab-content on">
+				<div class="bio-wrap">
+					<div class="photo-col">
+						<img class="photo"
+							src="https://orientalizmi.wordpress.com/wp-content/uploads/2014/02/dr-muhamed-mufaku-arnauti-e1582465691567.jpg"
+							alt="Muhamed Mufaku AlArnaut"
+							onerror="this.style.display='none';document.getElementById('fb-sq').style.display='flex'" />
+						<div id="fb-sq" class="photo-fb"><span>MA</span></div>
+						<p class="pcredit">Foto: Orientalizmi Shqiptar</p>
+					</div>
+					<div class="bio">
+						<h2>Prof. Dr. Muhamed Mufaku AlArnaut</h2>
+						<div class="names"><span>محمد موفق الأرناؤوط</span><span>Muhammad Mufaku
+								al-Arnaut</span><span>Damask, 1952</span></div>
+						<p>Studiues kosovar shqiptar sirian dhe profesor i pensionuar i studimeve të Lindjes së Mesme.
+							Lindi në Damask nga një familje shqiptare kosovare — babai nga Peja, nëna nga Vrella e
+							Istogu. U diplomua në gjuhën dhe letërsinë arabe në Universitetin e Damaskut, pastaj mbrojti
+							tri doktorata në Universitetin e Prishtinës: në historinë shqiptare (1977), shkencat
+							filologjike (1981) dhe shkencat historike (1986).</p>
+						<p>Punoi si lektor i gjuhës arabe në Prishtinë nga 1975 deri më 1987, kur u dëbua nga regjimi i
+							Milošević. Dha mësim në Universitetin Jarmuk dhe Al al-Bejt në Jordani deri në pension
+							(2018). Drejtoi Institutin «Shtëpia e Urtësisë», bashkëpunoi për «Enciklopedinë e Madhe
+							Arabe» dhe ishte anëtar i ASHAK-ut. Presidenti i Kosovës i ndau Medaljen e Meritës në vitin
+							2012.</p>
+						<div class="stats">
+							<div><span class="sv">30+</span><span class="sl">Libra</span></div>
+							<div><span class="sv">100+</span><span class="sl">Artikuj</span></div>
+							<div><span class="sv">3</span><span class="sl">Doktorata</span></div>
+							<div><span class="sv">2012</span><span class="sl">Medalja e Meritës</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="sq-authored" class="tab-content">
+				<div class="sh">Librat e autoruar</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw"><img class="ci"
+								src="https://www.shtepiaelibrit.com/store/img/p/5/5/0/2/5502-large_default.jpg"
+								onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+							<div class="cp ca" style="display:none">
+								<div class="co">🌙</div>
+								<div class="cln"></div>
+								<div class="ct">Figura shqiptare në Lindjen e Mesme</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Histori · Shqip</div>
+						<div class="btit"><a
+								href="https://zeri.info/kultura/413783/promovohet-libri-i-muhamed-mufakut-figura-shqiptare-ne-lindjen-e-mesme/"
+								target="_blank">Figura shqiptare në Lindjen e Mesme: shek. XVI–XX</a></div>
+						<div class="bdesc">Fryt i punës 30-vjeçare (1989–2018) nga Turqia deri në Jemen.</div>
+						<div class="bmeta">Logos-A · Prishtinë / Shkup / Tiranë, 2021</div>
+					</div>
+					<div class="bc">
+						<div class="cw"><img class="ci"
+								src="https://www.shtepiaelibrit.com/store/img/p/1/8/8/5/1885-large_default.jpg"
+								onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+							<div class="cp cb" style="display:none">
+								<div class="co">✦</div>
+								<div class="cln"></div>
+								<div class="ct">Lidhjet letrare shqiptare–arabe</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Studime letrare</div>
+						<div class="btit"><a
+								href="https://www.shtepiaelibrit.com/store/en/reference-books/1885-lidhjet-letrare-shqiptare-arabe-muhamed-mufaku-arnauti.html"
+								target="_blank">Lidhjet letrare shqiptare–arabe</a></div>
+						<div class="bdesc">296 faqe. ISBN 978-99956-646-0-2.</div>
+						<div class="bmeta">Qendra Shqiptare për Studime Orientale · Tiranë, 2009</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cc">
+								<div class="co">⚜</div>
+								<div class="cln"></div>
+								<div class="ct">Nga historia e shqiptarëve të Egjiptit</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Histori</div>
+						<div class="btit"><a
+								href="https://www.shtepiaelibrit.com/store/en/albanian-history/5502-nga-historia-e-shqiptareve-te-egjiptit-gjate-shekujve-xv-xx-muhamed-mufaku-9789951615594.html"
+								target="_blank">Nga historia e shqiptarëve të Egjiptit gjatë shekujve XV–XX</a></div>
+						<div class="bdesc">172 faqe. ISBN 978-9951-615-59-4.</div>
+						<div class="bmeta">ASHAK · Prishtinë, 2016</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cd">
+								<div class="co">📜</div>
+								<div class="cln"></div>
+								<div class="ct">Letërsia shqipe me shkronja arabe</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Studim · Arabisht</div>
+						<div class="btit">Letërsia shqipe me shkronja arabe</div>
+						<div class="bdesc">Studim pionier mbi prodhimin kulturor shqiptar me alfabet arab.</div>
+						<div class="bmeta">Dar al-Bashir · Aman, 1991</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ce">
+								<div class="co">☽</div>
+								<div class="cln"></div>
+								<div class="ct">Reflektimet arabe-islame në letërsinë shqipe</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Studim</div>
+						<div class="btit">Reflektimet arabe-islame në letërsinë shqipe</div>
+						<div class="bdesc">Ndër veprat e para të këtij lloji të botuara në botën arabe.</div>
+						<div class="bmeta">Kuvajt, rreth viteve 1990</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cf">
+								<div class="co">⚔</div>
+								<div class="cln"></div>
+								<div class="ct">Kosova epiqendra e konfliktit</div>
+								<div class="cln"></div>
+								<div class="cau">Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Histori · Politikë</div>
+						<div class="btit">Kosova epiqendra e konfliktit shqiptaro-serb</div>
+						<div class="bdesc">Kosova si epiqendër e konfliktit shqiptaro-serb në shekullin XX.</div>
+						<div class="bmeta">Prishtinë</div>
+					</div>
+				</div>
+				<div class="sh2" style="margin-top:2rem">Tituj të tjerë të autoruar</div>
+				<div class="tg">
+					<div class="ti"><strong>Shqiptarët në botën arabe</strong></div>
+					<div class="ti"><strong>Islami në Jugosllavi</strong></div>
+					<div class="ti"><strong>Historia e Beogradit oriental</strong></div>
+					<div class="ti"><strong>Studime mbi Devshermen</strong></div>
+					<div class="ti"><strong>Ana tjetër e Ittihad ve Terekki</strong></div>
+					<div class="ti"><strong>Studime në historinë kulturore të islamit në Ballkan</strong></div>
+					<div class="ti"><strong>Tregime popullore rome të Kosovës</strong></div>
+					<div class="ti"><strong>Palestina shqiptare</strong></div>
+				</div>
+				<p style="margin-top:1.25rem;font-size:13px;color:var(--text3)">Katalogu i plotë: <a
+						href="https://ashak.org/anetaret/muhamed-mufaku/" target="_blank">Akademia e Shkencave dhe e
+						Arteve e Kosovës (ASHAK)</a></p>
+			</div>
+
+			<div id="sq-translated" class="tab-content">
+				<div class="sh">Librat e përkthyer</div>
+				<div class="sh2">Nga shqipja në arabisht</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ca">
+								<div class="co">🎭</div>
+								<div class="cln"></div>
+								<div class="ct">Antologjia e poezisë shqipe në Kosovë</div>
+								<div class="cln"></div>
+								<div class="cau">Prkth. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poezi · Arabisht</div>
+						<div class="btit">Antologjia e poezisë shqipe në Kosovë</div>
+						<div class="bdesc">Antologji e poezisë shqipe të Kosovës e përkthyer në arabisht.</div>
+						<div class="bmeta">Damask / Prishtinë</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cb">
+								<div class="co">📖</div>
+								<div class="cln"></div>
+								<div class="ct">Jeta në ecje — Antologji e poezisë bashkëkohore të Kosovës</div>
+								<div class="cln"></div>
+								<div class="cau">Prkth. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poezi · Arabisht</div>
+						<div class="btit"><a
+								href="https://www.koha.net/en/shtojca-kulture/panairi-nderkombetar-i-librit-ne-kajro-nje-tryeze-kushtuar-besnik-mustafajt"
+								target="_blank">Jeta në ecje — Antologji e poezisë bashkëkohore të Kosovës</a></div>
+						<div class="bdesc">18 poetë kosovarë. Panajri Ndërkombëtar i Librit, Kajro 2025.</div>
+						<div class="bmeta">Al'an · Aman, 2025</div>
+					</div>
+				</div>
+				<div class="sh2">Nga arabishtja në shqip</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cd">
+								<div class="co">🌙</div>
+								<div class="cln"></div>
+								<div class="ct">Tregime siriane</div>
+								<div class="cln"></div>
+								<div class="cau">Prkth. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Tregime · Shqip</div>
+						<div class="btit">Tregime siriane</div>
+						<div class="bdesc">Zgjedhje tregimesh siriane me parathënie dhe përkthim nga arabishtja.</div>
+						<div class="bmeta">Prishtinë</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp ce">
+								<div class="co">🏜</div>
+								<div class="cln"></div>
+								<div class="ct">Deti në shkretëtirë</div>
+								<div class="cln"></div>
+								<div class="cau">Prkth. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poezi · Shqip</div>
+						<div class="btit">Deti në shkretëtirë</div>
+						<div class="bdesc">Antologji e poezisë arabe e përkthyer në shqip.</div>
+						<div class="bmeta">Prishtinë</div>
+					</div>
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cf">
+								<div class="co">✦</div>
+								<div class="cln"></div>
+								<div class="ct">Antologjia e poezisë së re arabe</div>
+								<div class="cln"></div>
+								<div class="cau">Prkth. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poezi · Shqip</div>
+						<div class="btit">Antologjia e poezisë së re arabe</div>
+						<div class="bdesc">Vepër epokale që ura lidhëse midis dy traditave letrare.</div>
+						<div class="bmeta">Prishtinë / Beograd, 1983</div>
+					</div>
+				</div>
+				<div class="sh2">Nga arabishtja në serbisht</div>
+				<div class="book-grid">
+					<div class="bc">
+						<div class="cw">
+							<div class="cp cg">
+								<div class="co">◈</div>
+								<div class="cln"></div>
+								<div class="ct">Savremena Poezija Sirije</div>
+								<div class="cln"></div>
+								<div class="cau">Prkth. Muhamed Mufaku AlArnaut</div>
+							</div>
+						</div>
+						<div class="btag">Poezi · Serbisht</div>
+						<div class="btit"><a
+								href="https://www.amazon.com/SAVREMENA-POEZIJA-SIRIJE-Muhamed-MUFAKU/dp/B005PWQQ60"
+								target="_blank">Savremena Poezija Sirije</a></div>
+						<div class="bdesc">Poezia siriane bashkëkohore e përkthyer dhe paraqitur nga AlArnaut.</div>
+						<div class="bmeta">Bagdala · Krushevac, 1983</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="sq-articles" class="tab-content">
+				<div class="sh">Artikuj &amp; Ese</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="at"><a
+									href="https://www.koha.net/en/shtojca-kulture/arnautet-e-lindjes-se-mesme"
+									target="_blank">Arnautët e Lindjes së Mesme</a><span class="pill">EN</span></div>
+							<div class="ap">Koha.net · Shtator 2024</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="at"><a
+									href="https://www.gazetaexpress.com/en/muhamed-mufaku-mbi-etnonimin-arnaut-ne-lindjen-e-mesme/"
+									target="_blank">Mbi etnonimin «arnaut» në Lindjen e Mesme</a><span
+									class="pill">SQ</span></div>
+							<div class="ap">Gazeta Express · Ligjëratë në Institutin Albanologjik, 2024</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2022</div>
+						<div>
+							<div class="at"><a
+									href="https://www.koha.net/en/shtojca-kulture/abdulatif-arnauti-ndash-zeri-i-letersise-shqipe-ne-arabisht-sinonim-i-shqiptareve-ne-siri"
+									target="_blank">Abdulatif Arnauti — Zëri i letërsisë shqipe në arabisht</a><span
+									class="pill">SQ</span></div>
+							<div class="ap">Koha.net · Mars 2022</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2021</div>
+						<div>
+							<div class="at"><a
+									href="https://www.koha.net/en/kulture/abdulatif-arnauti-70-vjet-ne-sherbim-te-kultures-shqiptare"
+									target="_blank">Abdulatif Arnauti — 70 vjet në shërbim të kulturës
+									shqiptare</a><span class="pill">SQ</span></div>
+							<div class="ap">Koha.net · Janar 2021</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2009</div>
+						<div>
+							<div class="at"><a
+									href="https://orientalizmi.wordpress.com/2012/01/12/maruf-arnauti-romancieri-i-pare-ne-letersine-siriane/"
+									target="_blank">Maruf Arnauti — Romancieri i parë në letërsinë siriane</a><span
+									class="pill">SQ</span></div>
+							<div class="ap">Revista URA, Nr. 2 · Qendra Shqiptare për Studime Orientale, Tiranë</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1978</div>
+						<div>
+							<div class="at">Çështja fetare në Shqipëri<span class="pill">AR</span></div>
+							<div class="ap">Revista Al-Arabi · Kuvajt</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="sq-peer" class="tab-content">
+				<div class="sh">Artikuj shkencorë në revista me recension</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">1994</div>
+						<div>
+							<div class="at"><a href="https://academic.oup.com/jis/article-abstract/5/2/242/748430"
+									target="_blank">Islami dhe myslimanët në Bosnjë 1878–1918: Dy hixhrete dhe dy
+									fetva</a><span class="pill">EN</span></div>
+							<div class="ap">Journal of Islamic Studies, Vëll. 5, Nr. 2 · Oxford University Press</div>
+							<div class="note">DOI: 10.1093/jis/5.2.242 · Cituar 11+ herë</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1990</div>
+						<div>
+							<div class="at">Kontribut për bibliografinë e orientalistikës jugosllave 1966–1990</div>
+							<div class="ap">Prilozi za orijentalnu filologiju · Sarajevë</div>
+						</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🔬</div>
+					<p><strong>Artikuj të tjerë shkencorë po shtohen.</strong></p>
+				</div>
+			</div>
+
+			<div id="sq-conf" class="tab-content">
+				<div class="sh">Referime në konferenca shkencore</div>
+				<div class="arts">
+					<div class="ar-row">
+						<div class="ay">2024</div>
+						<div>
+							<div class="at">Mbi etnonimin «arnaut» në Lindjen e Mesme</div>
+							<div class="ap">Seminari Ndërkombëtar i Gjuhës Shqipe · Instituti Albanologjik, Prishtinë
+							</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">2014</div>
+						<div>
+							<div class="at">Marrëdhëniet arabo-ballkanike: dimensionet historike dhe kulturore</div>
+							<div class="ap">Simpoziumi i Parë Ndërkombëtar mbi Marrëdhëniet Arabo-Ballkanike · Doha,
+								Katar</div>
+						</div>
+					</div>
+					<div class="ar-row">
+						<div class="ay">1987</div>
+						<div>
+							<div class="at">Veprimtaria letrare e shkrimtarëve shqiptarë në Siri</div>
+							<div class="ap">Lidhja e Shkrimtarëve · Damask, Siri</div>
+						</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🎓</div>
+					<p><strong>Lista e plotë e konferencave po hartohet.</strong></p>
+				</div>
+			</div>
+
+			<div id="sq-interviews" class="tab-content">
+				<div class="sh">Intervista</div>
+				<div class="interview-list">
+					<div class="interview-card">
+						<div class="ic-title"><a
+								href="https://telegrafi.com/en/Muhamed-Mufaku,-director-of-the-Institute-of-Oriental-Studies-in-Pristina/"
+								target="_blank">Muhamed Mufaku AlArnaut, drejtor i Institutit të Studimeve Orientale në
+								Prishtinë</a><span class="ic-badge">EN</span></div>
+						<div class="ic-meta">Telegrafi · Tetor 2018</div>
+					</div>
+					<div class="interview-card">
+						<div class="ic-title"><a href="https://telegrafi.com/en/shqiptaret-ne-siri-assad-po-na-vret/"
+								target="_blank">Shqiptarët në Siri: Assadi po na vret</a><span
+								class="ic-badge">EN</span></div>
+						<div class="ic-meta">Telegrafi · 2012</div>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🎙️</div>
+					<p><strong>Intervista të tjera po shtohen.</strong></p>
+				</div>
+			</div>
+
+			<div id="sq-awards" class="tab-content">
+				<div class="sh">Çmime &amp; Njohje</div>
+				<div class="awards-list">
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🏅</span>
+							<div class="award-year">2012<small>Çmim</small></div>
+						</div>
+						<div class="award-body">
+							<h3>Medalja e Meritës — Republika e Kosovës</h3>
+							<p>Ndarë nga Presidenti i Kosovës si njohje për kontribut të jashtëzakonshëm në promovimin e
+								historisë, kulturës dhe letërsisë shqiptare në botën arabe dhe Lindjen e Mesme. Një nga
+								çmimet më të larta civile të Kosovës.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🏛️</span>
+							<div class="award-year">2005<small>Anëtarësi</small></div>
+						</div>
+						<div class="award-body">
+							<h3>Anëtar me korrespondencë — Akademia Shkencore Arabe, Damask</h3>
+							<p>U zgjodh anëtar me korrespondencë i Mbledhisë së Gjuhës Arabe (themeluar 1919), një ndër
+								institucionet më prestigjioze shkencore arabe, si njohje e studimeve të tij mbi
+								marrëdhëniet letrare dhe historike arabo-ballkanike.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">🎓</span>
+							<div class="award-year">2005<small>Anëtarësi</small></div>
+						</div>
+						<div class="award-body">
+							<h3>Anëtar i jashtëm — Akademia e Shkencave dhe e Arteve e Kosovës (ASHAK)</h3>
+							<p>U zgjodh anëtar i jashtëm i ASHAK-ut, institucioni më i lartë shkencor dhe kulturor i
+								Kosovës, si njohje e kontributit jetëgjatë shkencor në albanologji dhe lidhjet midis
+								traditave intelektuale shqiptare dhe arabe.</p>
+						</div>
+					</div>
+					<div class="award-card">
+						<div style="text-align:center"><span class="award-icon">📚</span>
+							<div class="award-year">2018<small>Emërim</small></div>
+						</div>
+						<div class="award-body">
+							<h3>Drejtor — Instituti i Studimeve Orientale, Prishtinë</h3>
+							<p>U zgjodh nga Kuvendi i Institutit të Studimeve Orientale në Prishtinë si drejtor — njohje
+								e dekadave të hulumtimit pionier në ndërlidhjen e traditave shkencore ballkanike dhe
+								arabe.</p>
+						</div>
+					</div>
+				</div>
+				<div class="sh2" style="margin-top:2rem">Anëtarësi akademike dhe redaktuese</div>
+				<div class="membership-grid">
+					<div class="mem-card">
+						<h4>Bord editorial — Prilozi za orijentalnu filologiju</h4>
+						<p>Sarajevë · Revistë e orientalistikës</p>
+					</div>
+					<div class="mem-card">
+						<h4>Bord editorial — Studime Orientale</h4>
+						<p>Prishtinë</p>
+					</div>
+					<div class="mem-card">
+						<h4>Anëtar i Senatit — Universiteti Al al-Bejt</h4>
+						<p>Mafrak, Jordani</p>
+					</div>
+					<div class="mem-card">
+						<h4>Anëtar i Këshillit të Dekanëve — Universiteti Al al-Bejt</h4>
+						<p>Mafrak, Jordani</p>
+					</div>
+					<div class="mem-card">
+						<h4>Anëtar — Shoqata e Orientalistëve të Kosovës</h4>
+						<p>Prishtinë</p>
+					</div>
+					<div class="mem-card">
+						<h4>Anëtar — Shoqata e Studimeve dhe Gjurmimeve, Lidhja e Shkrimtarëve të Sirisë</h4>
+						<p>Damask</p>
+					</div>
+				</div>
+				<div class="placeholder-banner">
+					<div class="pb-icon">🏆</div>
+					<p><strong>Çmime dhe njohje të tjera po shtohen.</strong> Ju lutemi na kontaktoni nëse keni të dhëna
+						shtesë.</p>
+				</div>
+			</div>
+
+			<div id="sq-photos" class="tab-content">
+				<div class="sh">Album fotografik</div>
+				<div class="gallery">
+					<div class="gallery-item">
+						<div class="gi-icon">🖼️</div>
+						<div class="gi-label">Portret i autorit — Damask, vitet 1980</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📚</div>
+						<div class="gi-label">Prezantim libri — Prishtinë, 2021</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🎓</div>
+						<div class="gi-label">Në Universitetin e Prishtinës, rreth vitit 1985</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🖼️</div>
+						<div class="gi-label">Me literatorë në Lidhjen e Shkrimtarëve, Damask, 1987</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🏛️</div>
+						<div class="gi-label">Në Universitetin Al al-Bejt, Jordani</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📜</div>
+						<div class="gi-label">Ceremonia e Medaljes së Meritës — Prishtinë, 2012</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">🌍</div>
+						<div class="gi-label">Seminari Ndërkombëtar i Gjuhës Shqipe</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gi-icon">📖</div>
+						<div class="gi-label">Panajri Ndërkombëtar i Librit, Kajro, 2025</div>
+					</div>
+				</div>
+				<p class="gallery-note">Për të shtuar foto reale: zëvendësoni çdo skedë treguese me një tag &lt;img&gt;
+					që tregon drejt skedarit të ngarkuar. Madhësia e rekomanduar: 800×600 px ose më e madhe.</p>
+			</div>
+
+			<footer>
+				<p>Muhamed Mufaku AlArnaut — Veprat e Plota</p>
+				<p><a href="https://en.wikipedia.org/wiki/Muhammad_Mufaku" target="_blank">Wikipedia</a> · <a
+						href="https://ashak.org/anetaret/muhamed-mufaku/" target="_blank">ASHAK</a> · <a
+						href="https://www.researchgate.net/profile/Muhamed-Mufaku" target="_blank">ResearchGate</a> · <a
+						href="https://orientalizmi.wordpress.com/2013/07/06/dr-muhamed-mufaku-arnauti/"
+						target="_blank">Orientalizmi Shqiptar</a></p>
+				<p style="font-size:11px;margin-top:.5rem">Foto: Orientalizmi Shqiptar · Kopertina: faqet e botuesve</p>
+			</footer>
+		</div>
+	</div><!-- /sq -->
+
+	<script type="module" src="./index.js"></script>
 </body>
 
 </html>
