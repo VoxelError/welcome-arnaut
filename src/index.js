@@ -1,12 +1,18 @@
 import "../styles.scss"
 import i18next from 'i18next'
-import en from "./en.js"
-import ar from "./ar.js"
-import sq from "./sq.js"
 import en_json from "./locales/en.json"
 import ar_json from "./locales/ar.json"
 import sq_json from "./locales/sq.json"
+
 import about from "./pages/about.js"
+import articles from "./pages/articles.js"
+import authored from "./pages/authored.js"
+import awards from "./pages/awards.js"
+import conf from "./pages/conf.js"
+import interviews from "./pages/interviews.js"
+import peer from "./pages/peer.js"
+import photos from "./pages/photos.js"
+import translated from "./pages/translated.js"
 
 await i18next.init({
 	lng: 'en',
@@ -40,14 +46,17 @@ const tabs = [
 ).join('')
 
 document.getElementById('navv').innerHTML = /* html */`<div class="tab-grid">${tabs}</div>`
-// document.getElementById('english').innerHTML = en
-// document.getElementById('arabic').innerHTML = ar
-// document.getElementById('albanian').innerHTML = sq
-
-// document.getElementById('english')
 
 const render_content = () => {
 	document.getElementById('about').innerHTML = about()
+	document.getElementById('articles').innerHTML = articles()
+	document.getElementById('authored').innerHTML = authored()
+	document.getElementById('awards').innerHTML = awards()
+	document.getElementById('conf').innerHTML = conf()
+	document.getElementById('interviews').innerHTML = interviews()
+	document.getElementById('peer').innerHTML = peer()
+	document.getElementById('photos').innerHTML = photos()
+	document.getElementById('translated').innerHTML = translated()
 }
 render_content()
 
