@@ -142,7 +142,7 @@ const bmeta = [
 ]
 
 export default () => /* html */`
-	<div id="en-authored" class="tab-content">
+	<div id="authored">
 		<div class="sh">Authored Books</div>
 
 		<div class="book-grid">

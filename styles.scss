@@ -5,7 +5,7 @@
 *::after {
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 :root {
@@ -38,7 +38,7 @@
 
 html {
 	font-size: 16px;
-	scroll-behavior: smooth
+	scroll-behavior: smooth;
 }
 
 body {
@@ -46,85 +46,37 @@ body {
 	color: var(--text);
 	font-family: 'Crimson Pro', Georgia, serif;
 	line-height: 1.7;
-	min-height: 100vh
+	min-height: 100vh;
 }
 
 a {
-	color: var(--accent)
-}
+	color: var(--accent);
 
-a:hover {
-	text-decoration: underline
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 /* ── Language bar ── */
-.lang-bar {
+.navbar {
 	position: sticky;
 	top: 0;
 	z-index: 200;
 	background: var(--bg);
 	border-bottom: 0.5px solid var(--border);
 	display: flex;
-	justify-content: center
-}
-
-.lb {
-	padding: .6rem 1.75rem;
-	font-family: inherit;
-	font-size: 13px;
-	font-weight: 600;
-	letter-spacing: .06em;
-	text-transform: uppercase;
-	background: none;
-	border: none;
-	border-bottom: 2px solid transparent;
-	cursor: pointer;
-	color: var(--text3);
-	transition: color .15s
-}
-
-.lb:hover {
-	color: var(--text2)
-}
-
-.lb.on {
-	color: var(--text);
-	border-bottom: 2px solid var(--accent)
-}
-
-.lb small {
-	display: block;
-	font-size: 11px;
-	opacity: .6;
-	font-weight: 400;
-	letter-spacing: 0;
-	text-transform: none
-}
-
-/* ── Panels ── */
-.panel {
-	display: none
-}
-
-.panel.on {
-	display: block
-}
-
-.ar-panel {
-	direction: rtl;
-	font-family: 'Noto Naskh Arabic', serif
+	justify-content: space-between;
 }
 
 .site {
 	max-width: 920px;
 	margin: 0 auto;
-	padding: 0 1.5rem 5rem
+	padding: 0 1.5rem 5rem;
 }
 
-/* ── Header ── */
 .hdr {
 	padding: 2.25rem 0 0;
-	text-align: center
+	text-align: center;
 }
 
 .t1 {
@@ -132,42 +84,39 @@ a:hover {
 	font-size: 28px;
 	font-weight: 400;
 	letter-spacing: .01em;
-	margin-bottom: .3rem
-}
-
-.t1ar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 28px;
-	font-weight: 500;
-	margin-bottom: .3rem
+	margin-bottom: .3rem;
 }
 
 .sub {
 	font-size: 15px;
 	color: var(--text2);
 	font-style: italic;
-	margin-bottom: 0
+	margin-bottom: 0;
 }
 
-.subar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 16px;
-	color: var(--text2);
-	margin-bottom: 0
+.logo {
+	padding: 0 1.5rem;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+	color: var(--text3);
+	font-family: 'Crimson Pro', Georgia, serif;
+	line-height: 1.3;
+	align-self: center;
+	text-decoration: underline;
 }
 
 /* ── Tab grid — all visible, no scroll bar ── */
 .tab-grid {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: .5rem;
-	margin: 1.75rem 0 2.5rem;
+	display: flex;
+	gap: 0.5rem;
 	border-bottom: 0.5px solid var(--border);
-	padding-bottom: 0;
+	padding: 0 1rem;
 }
 
 .tab {
-	padding: .65rem .5rem;
+	padding: 1rem 1rem;
 	font-size: 11.5px;
 	font-weight: 600;
 	letter-spacing: .04em;
@@ -183,30 +132,15 @@ a:hover {
 	line-height: 1.3;
 	white-space: normal;
 	word-break: break-word;
-}
 
-.tab:hover {
-	color: var(--text2)
-}
+	&:hover {
+		color: var(--text2);
+	}
 
-.tab.on {
-	color: var(--text);
-	border-bottom: 2.5px solid var(--accent)
-}
-
-.ar-panel .tab {
-	text-transform: none;
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 13px;
-	letter-spacing: 0
-}
-
-.tab-content {
-	display: none
-}
-
-.tab-content.on {
-	display: block
+	&.on {
+		color: var(--text);
+		border-bottom: 2.5px solid var(--accent);
+	}
 }
 
 /* ── Section headings ── */
@@ -216,16 +150,7 @@ a:hover {
 	font-weight: 400;
 	margin-bottom: 1.5rem;
 	padding-bottom: .6rem;
-	border-bottom: 0.5px solid var(--border)
-}
-
-.shar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 21px;
-	font-weight: 500;
-	margin-bottom: 1.5rem;
-	padding-bottom: .6rem;
-	border-bottom: 0.5px solid var(--border)
+	border-bottom: 0.5px solid var(--border);
 }
 
 .sh2 {
@@ -235,16 +160,7 @@ a:hover {
 	margin: 1.75rem 0 1rem;
 	color: var(--text2);
 	padding-bottom: .35rem;
-	border-bottom: 0.5px solid var(--border)
-}
-
-.sh2ar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 15px;
-	margin: 1.75rem 0 1rem;
-	color: var(--text2);
-	padding-bottom: .35rem;
-	border-bottom: 0.5px solid var(--border)
+	border-bottom: 0.5px solid var(--border);
 }
 
 /* ── Bio section ── */
@@ -253,14 +169,14 @@ a:hover {
 	grid-template-columns: 185px 1fr;
 	gap: 2.5rem;
 	margin-bottom: 2.5rem;
-	align-items: start
+	align-items: start;
 }
 
 .photo-col {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: .75rem
+	gap: .75rem;
 }
 
 .photo {
@@ -271,75 +187,38 @@ a:hover {
 	border-radius: var(--rl);
 	border: 0.5px solid var(--border);
 	background: var(--bg2);
-	display: block
-}
-
-.photo-fb {
-	width: 100%;
-	aspect-ratio: 4/5;
-	border-radius: var(--rl);
-	border: 0.5px solid var(--border);
-	background: var(--bg2);
-	display: none;
-	align-items: center;
-	justify-content: center
-}
-
-.photo-fb span {
-	font-family: 'Playfair Display', serif;
-	font-size: 48px;
-	color: var(--text3)
+	display: block;
 }
 
 .pcredit {
 	font-size: 11px;
 	color: var(--text3);
 	text-align: center;
-	line-height: 1.5
+	line-height: 1.5;
 }
 
-.bio h2 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-	font-size: 20px;
-	margin-bottom: .25rem
-}
+.bio {
+	& h2 {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 20px;
+		margin-bottom: .25rem;
+	}
 
-.bio .h2ar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-weight: 500;
-	font-size: 20px;
-	margin-bottom: .25rem
-}
+	& p {
+		font-size: 16px;
+		color: var(--text2);
+		line-height: 1.72;
+		margin-bottom: .85rem;
+	}
 
-.names {
-	font-size: 13px;
-	color: var(--text3);
-	margin-bottom: .9rem;
-	display: flex;
-	flex-wrap: wrap;
-	gap: .4rem
-}
-
-.names span {
-	padding: 2px 8px;
-	border: 0.5px solid var(--border2);
-	border-radius: 2px
-}
-
-.bio p {
-	font-size: 16px;
-	color: var(--text2);
-	line-height: 1.72;
-	margin-bottom: .85rem
-}
-
-.bio .par {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 17px;
-	color: var(--text2);
-	line-height: 1.85;
-	margin-bottom: .85rem
+	& .par {
+		font-family: 'Noto Naskh Arabic', serif;
+		font-size: 17px;
+		color: var(--text2);
+		line-height: 1.85;
+		margin-bottom: .85rem;
+	}
 }
 
 .stats {
@@ -348,14 +227,14 @@ a:hover {
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	padding-top: 1rem;
-	border-top: 0.5px solid var(--border)
+	border-top: 0.5px solid var(--border);
 }
 
 .sv {
 	font-family: 'Playfair Display', serif;
 	font-size: 22px;
 	font-weight: 400;
-	display: block
+	display: block;
 }
 
 .sl {
@@ -363,21 +242,14 @@ a:hover {
 	letter-spacing: .06em;
 	text-transform: uppercase;
 	color: var(--text3);
-	display: block
-}
-
-.slar {
-	font-family: 'Noto Naskh Arabic', serif;
-	text-transform: none;
-	font-size: 13px;
-	letter-spacing: 0
+	display: block;
 }
 
 /* ── Awards section ── */
 .awards-list {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem
+	gap: 1rem;
 }
 
 .award-card {
@@ -388,7 +260,7 @@ a:hover {
 	padding: 1.25rem;
 	background: var(--bg2);
 	border-radius: var(--rl);
-	border: 0.5px solid var(--border)
+	border: 0.5px solid var(--border);
 }
 
 .award-year {
@@ -397,119 +269,92 @@ a:hover {
 	font-weight: 400;
 	color: var(--accent);
 	text-align: center;
-	line-height: 1
+	line-height: 1;
+
+	& small {
+		display: block;
+		font-family: 'Crimson Pro', serif;
+		font-size: 11px;
+		letter-spacing: .06em;
+		text-transform: uppercase;
+		color: var(--text3);
+		margin-top: .2rem;
+	}
 }
 
-.award-year small {
-	display: block;
-	font-family: 'Crimson Pro', serif;
-	font-size: 11px;
-	letter-spacing: .06em;
-	text-transform: uppercase;
-	color: var(--text3);
-	margin-top: .2rem
-}
+.award-body {
+	& h3 {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 17px;
+		margin-bottom: .3rem;
+	}
 
-.award-year-ar {
-	font-family: 'Playfair Display', serif;
-	font-size: 22px;
-	font-weight: 400;
-	color: var(--accent);
-	text-align: center;
-	line-height: 1
-}
+	& p {
+		font-size: 14px;
+		color: var(--text2);
+		line-height: 1.6;
+		margin: 0;
+	}
 
-.award-year-ar small {
-	display: block;
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 12px;
-	color: var(--text3);
-	margin-top: .2rem
-}
-
-.award-body h3 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-	font-size: 17px;
-	margin-bottom: .3rem
-}
-
-.award-body .h3ar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 18px;
-	margin-bottom: .3rem
-}
-
-.award-body p {
-	font-size: 14px;
-	color: var(--text2);
-	line-height: 1.6;
-	margin: 0
-}
-
-.award-body .par {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 15px;
-	color: var(--text2);
-	line-height: 1.7;
-	margin: 0
+	& .par {
+		font-family: 'Noto Naskh Arabic', serif;
+		font-size: 15px;
+		color: var(--text2);
+		line-height: 1.7;
+		margin: 0;
+	}
 }
 
 .award-icon {
 	font-size: 28px;
 	margin-bottom: .3rem;
-	display: block
+	display: block;
 }
 
 .membership-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: .75rem;
-	margin-top: 1rem
+	margin-top: 1rem;
 }
 
 .mem-card {
 	background: var(--bg);
 	border: 0.5px solid var(--border);
 	border-radius: var(--r);
-	padding: .85rem 1rem
-}
+	padding: .85rem 1rem;
 
-.mem-card h4 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-	font-size: 14px;
-	margin-bottom: .2rem
-}
+	& h4 {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 14px;
+		margin-bottom: .2rem;
+	}
 
-.mem-card .h4ar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 15px;
-	margin-bottom: .2rem
-}
+	& p {
+		font-size: 12px;
+		color: var(--text3);
+	}
 
-.mem-card p {
-	font-size: 12px;
-	color: var(--text3)
-}
-
-.mem-card .par {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 13px;
-	color: var(--text3)
+	& .par {
+		font-family: 'Noto Naskh Arabic', serif;
+		font-size: 13px;
+		color: var(--text3);
+	}
 }
 
 /* ── Books grid ── */
 .book-grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 1.5rem
+	gap: 1.5rem;
 }
 
 .bc {
 	display: flex;
 	flex-direction: column;
-	gap: .7rem
+	gap: .7rem;
 }
 
 .cw {
@@ -517,14 +362,14 @@ a:hover {
 	border-radius: var(--r);
 	overflow: hidden;
 	border: 0.5px solid var(--border);
-	background: var(--bg2)
+	background: var(--bg2);
 }
 
 .ci {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	display: block
+	display: block;
 }
 
 .cp {
@@ -536,62 +381,55 @@ a:hover {
 	justify-content: center;
 	padding: 1rem .75rem;
 	gap: .45rem;
-	text-align: center
+	text-align: center;
 }
 
 .ca {
-	background: #2c2418
+	background: #2c2418;
 }
 
 .cb {
-	background: #1a2c24
+	background: #1a2c24;
 }
 
 .cc {
-	background: #241828
+	background: #241828;
 }
 
 .cd {
-	background: #28201a
+	background: #28201a;
 }
 
 .ce {
-	background: #1e2430
+	background: #1e2430;
 }
 
 .cf {
-	background: #241c18
+	background: #241c18;
 }
 
 .cg {
-	background: #1c2820
+	background: #1c2820;
 }
 
 .ch {
-	background: #2a1c28
+	background: #2a1c28;
 }
 
 .cj {
-	background: #281e18
+	background: #281e18;
 }
 
 .co {
 	font-size: 22px;
-	opacity: .6
+	opacity: .6;
 }
 
 .ct {
 	font-family: 'Playfair Display', serif;
 	font-size: 12px;
 	color: rgba(255, 255, 255, .82);
-	line-height: 1.4
-}
-
-.ctar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 12px;
-	color: rgba(255, 255, 255, .82);
-	line-height: 1.4
+	line-height: 1.4;
 }
 
 .cau {
@@ -599,20 +437,13 @@ a:hover {
 	color: rgba(255, 255, 255, .4);
 	letter-spacing: .04em;
 	text-transform: uppercase;
-	margin-top: auto
-}
-
-.cauar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 11px;
-	color: rgba(255, 255, 255, .4);
-	margin-top: auto
+	margin-top: auto;
 }
 
 .cln {
 	width: 24px;
 	height: 0.5px;
-	background: rgba(255, 255, 255, .3)
+	background: rgba(255, 255, 255, .3);
 }
 
 .btag {
@@ -620,69 +451,41 @@ a:hover {
 	letter-spacing: .07em;
 	text-transform: uppercase;
 	font-weight: 600;
-	color: var(--text3)
-}
-
-.btagAr {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 13px;
-	color: var(--text3)
+	color: var(--text3);
 }
 
 .btit {
 	font-family: 'Playfair Display', serif;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 1.4
-}
+	line-height: 1.4;
 
-.btitar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 14px;
-	line-height: 1.5
-}
+	& a {
+		color: var(--text);
+		text-decoration: none;
 
-.btit a,
-.btitar a {
-	color: var(--text);
-	text-decoration: none
-}
-
-.btit a:hover,
-.btitar a:hover {
-	text-decoration: underline
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .bdesc {
 	font-size: 13px;
 	color: var(--text2);
 	line-height: 1.55;
-	flex: 1
-}
-
-.bdescAr {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 14px;
-	color: var(--text2);
-	line-height: 1.6;
-	flex: 1
+	flex: 1;
 }
 
 .bmeta {
 	font-size: 12px;
-	color: var(--text3)
-}
-
-.bmetaAr {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 13px;
-	color: var(--text3)
+	color: var(--text3);
 }
 
 /* ── Articles list ── */
 .arts {
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
 }
 
 .ar-row {
@@ -691,17 +494,17 @@ a:hover {
 	gap: 1rem;
 	padding: .85rem 0;
 	border-bottom: 0.5px solid var(--border);
-	align-items: start
-}
+	align-items: start;
 
-.ar-row:last-child {
-	border-bottom: none
+	&:last-child {
+		border-bottom: none;
+	}
 }
 
 .ay {
 	font-size: 13px;
 	color: var(--text3);
-	padding-top: 3px
+	padding-top: 3px;
 }
 
 .at {
@@ -709,36 +512,21 @@ a:hover {
 	font-size: 16px;
 	font-weight: 400;
 	margin-bottom: .2rem;
-	line-height: 1.4
-}
+	line-height: 1.4;
 
-.atar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 17px;
-	margin-bottom: .2rem;
-	line-height: 1.5
-}
+	& a {
+		color: var(--text);
+		text-decoration: none;
 
-.at a,
-.atar a {
-	color: var(--text);
-	text-decoration: none
-}
-
-.at a:hover,
-.atar a:hover {
-	text-decoration: underline
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .ap {
 	font-size: 13px;
-	color: var(--text2)
-}
-
-.apar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 14px;
-	color: var(--text2)
+	color: var(--text2);
 }
 
 .pill {
@@ -752,36 +540,21 @@ a:hover {
 	border-radius: 2px;
 	color: var(--text3);
 	margin-left: 6px;
-	vertical-align: middle
-}
-
-.pillar {
-	margin-left: 0;
-	margin-right: 6px;
-	font-family: 'Crimson Pro', serif;
-	text-transform: none;
-	letter-spacing: 0
+	vertical-align: middle;
 }
 
 .note {
 	font-size: 12px;
 	color: var(--text3);
 	font-style: italic;
-	margin-top: .2rem
-}
-
-.notear {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 13px;
-	color: var(--text3);
-	margin-top: .2rem
+	margin-top: .2rem;
 }
 
 /* ── Gallery ── */
 .gallery {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 1rem
+	gap: 1rem;
 }
 
 .gallery-item {
@@ -795,23 +568,23 @@ a:hover {
 	justify-content: center;
 	gap: .5rem;
 	cursor: pointer;
-	transition: border-color .2s
-}
+	transition: border-color .2s;
 
-.gallery-item:hover {
-	border-color: var(--accent)
+	&:hover {
+		border-color: var(--accent);
+	}
 }
 
 .gi-icon {
 	font-size: 28px;
-	opacity: .3
+	opacity: .3;
 }
 
 .gi-label {
 	font-size: 11px;
 	color: var(--text3);
 	text-align: center;
-	padding: 0 .5rem
+	padding: 0 .5rem;
 }
 
 .gallery-note {
@@ -819,64 +592,42 @@ a:hover {
 	font-size: 13px;
 	color: var(--text3);
 	font-style: italic;
-	line-height: 1.6
-}
-
-.gallery-notear {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 14px;
-	color: var(--text3);
-	margin-top: 1.25rem;
-	line-height: 1.6
+	line-height: 1.6;
 }
 
 /* ── Interviews ── */
 .interview-list {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem
+	gap: 1rem;
 }
 
 .interview-card {
 	background: var(--bg2);
 	border-radius: var(--rl);
 	border: 0.5px solid var(--border);
-	padding: 1rem 1.25rem
+	padding: 1rem 1.25rem;
 }
 
 .ic-title {
 	font-family: 'Playfair Display', serif;
 	font-size: 16px;
 	font-weight: 400;
-	margin-bottom: .3rem
-}
+	margin-bottom: .3rem;
 
-.ic-titlear {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 17px;
-	margin-bottom: .3rem
-}
+	& a {
+		color: var(--text);
+		text-decoration: none;
 
-.ic-title a,
-.ic-titlear a {
-	color: var(--text);
-	text-decoration: none
-}
-
-.ic-title a:hover,
-.ic-titlear a:hover {
-	text-decoration: underline
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .ic-meta {
 	font-size: 13px;
-	color: var(--text2)
-}
-
-.ic-metaar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 14px;
-	color: var(--text2)
+	color: var(--text2);
 }
 
 .ic-badge {
@@ -889,13 +640,13 @@ a:hover {
 	margin-left: 8px;
 	vertical-align: middle;
 	letter-spacing: .04em;
-	text-transform: uppercase
+	text-transform: uppercase;
 }
 
 /* ── More titles ── */
 .tg {
 	columns: 2;
-	column-gap: 2rem
+	column-gap: 2rem;
 }
 
 .ti {
@@ -904,23 +655,14 @@ a:hover {
 	border-bottom: 0.5px solid var(--border);
 	font-size: 14px;
 	color: var(--text2);
-	line-height: 1.5
-}
+	line-height: 1.5;
 
-.ti strong {
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-	font-size: 14px;
-	color: var(--text)
-}
-
-.tiar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 16px
-}
-
-.tiar strong {
-	font-family: 'Noto Naskh Arabic', serif
+	& strong {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 14px;
+		color: var(--text);
+	}
 }
 
 /* ── Placeholder ── */
@@ -933,12 +675,12 @@ a:hover {
 	color: var(--text3);
 	font-size: 14px;
 	margin-bottom: 1.5rem;
-	margin-top: 1.5rem
-}
+	margin-top: 1.5rem;
 
-.placeholder-banner .pb-icon {
-	font-size: 32px;
-	margin-bottom: .5rem
+	& .pb-icon {
+		font-size: 32px;
+		margin-bottom: .5rem;
+	}
 }
 
 /* ── Footer ── */
@@ -948,68 +690,5 @@ footer {
 	border-top: 0.5px solid var(--border);
 	font-size: 13px;
 	color: var(--text3);
-	line-height: 2
-}
-
-.footar {
-	font-family: 'Noto Naskh Arabic', serif;
-	font-size: 15px
-}
-
-/* ── Responsive ── */
-@media(max-width:760px) {
-	.bio-wrap {
-		grid-template-columns: 1fr
-	}
-
-	.photo {
-		width: 140px;
-		margin: 0 auto
-	}
-
-	.book-grid {
-		grid-template-columns: repeat(2, 1fr)
-	}
-
-	.gallery {
-		grid-template-columns: repeat(2, 1fr)
-	}
-
-	.tg {
-		columns: 1
-	}
-
-	.membership-grid {
-		grid-template-columns: 1fr
-	}
-
-	.tab-grid {
-		grid-template-columns: repeat(3, 1fr)
-	}
-
-	.award-card {
-		grid-template-columns: 60px 1fr;
-		gap: .85rem
-	}
-}
-
-@media(max-width:500px) {
-	.book-grid {
-		grid-template-columns: 1fr 1fr;
-		gap: .75rem
-	}
-
-	.t1,
-	.t1ar {
-		font-size: 22px
-	}
-
-	.tab-grid {
-		grid-template-columns: repeat(2, 1fr)
-	}
-
-	.tab {
-		font-size: 10.5px;
-		padding: .55rem .35rem
-	}
+	line-height: 2;
 }

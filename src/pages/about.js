@@ -2,12 +2,10 @@ import i18next from "i18next"
 const { t } = i18next
 
 export default () => /* html */`
-	<div id="about" class="tab-content on">
+	<div id="about">
 		<div class="bio-wrap">
 			<div class="photo-col">
-				<img class="photo"
-					src="https://orientalizmi.wordpress.com/wp-content/uploads/2014/02/dr-muhamed-mufaku-arnauti-e1582465691567.jpg"
-					onerror="this.style.display='none';document.getElementById('fb-all').style.display='flex'" />
+				<img class="photo" src="https://orientalizmi.wordpress.com/wp-content/uploads/2014/02/dr-muhamed-mufaku-arnauti-e1582465691567.jpg"/>
 				<p class="pcredit">${t("about.photo_credit")}</p>
 			</div>
 			<div class="bio">

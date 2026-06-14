@@ -2,7 +2,7 @@ import i18next from "i18next"
 const { t } = i18next
 
 export default () => /* html */`
-	<div id="en-photos" class="tab-content">
+	<div id="photos">
 		<div class="sh">Photo Album</div>
 		<div class="gallery">
 			<div class="gallery-item">

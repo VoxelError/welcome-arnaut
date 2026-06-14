@@ -2,7 +2,7 @@ import i18next from "i18next"
 const { t } = i18next
 
 export default () => /* html */`
-	<div id="en-translated" class="tab-content">
+	<div id="translated">
 		<div class="sh">Translated Books</div>
 		<div class="sh2">Albanian → Arabic</div>
 		<div class="book-grid">
