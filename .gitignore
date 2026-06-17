@@ -13,6 +13,7 @@ dist-ssr
 *.local
 bun.lockb
 todo.md
+vite.config.js
 
 # Editor directories and files
 .vscode/*
@@ -24,3 +25,4 @@ todo.md
 *.njsproj
 *.sln
 *.sw?
+to-do.txt

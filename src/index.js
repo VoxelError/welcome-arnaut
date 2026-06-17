@@ -4,6 +4,16 @@ import en_json from "./locales/en.json"
 import ar_json from "./locales/ar.json"
 import sq_json from "./locales/sq.json"
 
+import about from './pages/about.js'
+import articles from './pages/articles.js'
+import authored from './pages/authored.js'
+import awards from './pages/awards.js'
+import conf from './pages/conf.js'
+import interviews from './pages/interviews.js'
+import peer from './pages/peer.js'
+import photos from './pages/photos.js'
+import translated from './pages/translated.js'
+
 await i18next.init({
 	lng: 'en',
 	fallbackLng: 'en',
@@ -14,29 +24,10 @@ await i18next.init({
 	}
 })
 
-const pages = [
-	'about',
-	'articles',
-	'authored',
-	'awards',
-	'conf',
-	'interviews',
-	'peer',
-	'photos',
-	'translated'
-]
-
-const modules = Object.fromEntries(
-	await Promise.all(
-		pages.map(async name => {
-			const { default: fn } = await import(`./pages/${name}.js`)
-			return [name, fn]
-		})
-	)
-)
+const modules = { about, articles, authored, awards, conf, interviews, peer, photos, translated }
+const pages = Object.keys(modules)
 
 document.getElementById("content").innerHTML = modules["about"]()
-
 document.getElementById('tab-grid').innerHTML = pages.map((t, i) =>
 	/* html */`
 		<button
