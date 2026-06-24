@@ -1,0 +1,11 @@
+- change theme to light cream background with dark blue accent
+- change photo in about section
+- implement media responsiveness
+- implement translations
+- implement article feed
+- implement landing page
+
+- fix translation errors (later)
+- fix broken links (waiting)
+- discuss scope of ease of access for client (for website editing)
+- provide guidance on navigating hostinger post-project

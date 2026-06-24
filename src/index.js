@@ -1,4 +1,5 @@
-import "../styles.scss"
+import "./styles/_index.scss"
+
 import i18next from 'i18next'
 import en_json from "./locales/en.json"
 import ar_json from "./locales/ar.json"
@@ -26,13 +27,14 @@ await i18next.init({
 
 const modules = { about, articles, authored, awards, conf, interviews, peer, photos, translated }
 const pages = Object.keys(modules)
+const default_page = pages.indexOf("about")
 
-document.getElementById("content").innerHTML = modules["about"]()
+document.getElementById("content").innerHTML = modules[pages[default_page]]()
 document.getElementById('tab-grid').innerHTML = pages.map((t, i) =>
 	/* html */`
 		<button
 			id="${t}"
-			class="tab ${i == 0 && 'on'}"
+			class="tab ${i == default_page && "on"}"
 			onclick="tab('${t}')"
 		>
 			<!-- ${i18next.t(`nav.${t}`)} -->

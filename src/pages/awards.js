@@ -31,7 +31,8 @@ export default () => /* html */`
 		<div class="awards-list">
 			${awards.map((e, i) => /*html*/`
 				<div class="award-card">
-					<div style="text-align:center"><span class="award-icon">${e.icon}</span>
+					<div style="text-align:center">
+						<span class="award-icon">${e.icon}</span>
 						<div class="award-year">${e.year}<small>${e.type}</small></div>
 					</div>
 					<div class="award-body">
