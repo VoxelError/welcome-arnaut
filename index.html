@@ -1,15 +1,1033 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<title>Muhamed Mufaku AlArnaut — Collected Works</title>
-	<link rel="stylesheet" href="styles.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Noto+Naskh+Arabic:wght@400;500;600&display=swap"
+		rel="stylesheet" />
+	<style>
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0
+		}
+
+		:root {
+			--bg: #faf9f7;
+			--bg2: #f2f0ec;
+			--bg3: #eceae4;
+			--text: #1a1814;
+			--text2: #5a5650;
+			--text3: #9a9690;
+			--border: rgba(30, 25, 20, 0.12);
+			--border2: rgba(30, 25, 20, 0.22);
+			--accent: #7a6a50;
+			--r: 8px;
+			--rl: 12px;
+		}
+
+		@media(prefers-color-scheme:dark) {
+			:root {
+				--bg: #181614;
+				--bg2: #222018;
+				--bg3: #2a271e;
+				--text: #f0ede8;
+				--text2: #a09a90;
+				--text3: #706a62;
+				--border: rgba(240, 230, 210, 0.1);
+				--border2: rgba(240, 230, 210, 0.2);
+				--accent: #c8b898;
+			}
+		}
+
+		html {
+			font-size: 16px;
+			scroll-behavior: smooth
+		}
+
+		body {
+			background: var(--bg);
+			color: var(--text);
+			font-family: 'Crimson Pro', Georgia, serif;
+			line-height: 1.7;
+			min-height: 100vh
+		}
+
+		a {
+			color: var(--accent)
+		}
+
+		a:hover {
+			text-decoration: underline
+		}
+
+		/* ── Language bar ── */
+		.lang-bar {
+			position: sticky;
+			top: 0;
+			z-index: 200;
+			background: var(--bg);
+			border-bottom: 0.5px solid var(--border);
+			display: flex;
+			justify-content: center
+		}
+
+		.lb {
+			padding: .6rem 1.75rem;
+			font-family: inherit;
+			font-size: 13px;
+			font-weight: 600;
+			letter-spacing: .06em;
+			text-transform: uppercase;
+			background: none;
+			border: none;
+			border-bottom: 2px solid transparent;
+			cursor: pointer;
+			color: var(--text3);
+			transition: color .15s
+		}
+
+		.lb:hover {
+			color: var(--text2)
+		}
+
+		.lb.on {
+			color: var(--text);
+			border-bottom: 2px solid var(--accent)
+		}
+
+		.lb small {
+			display: block;
+			font-size: 11px;
+			opacity: .6;
+			font-weight: 400;
+			letter-spacing: 0;
+			text-transform: none
+		}
+
+		/* ── Panels ── */
+		.panel {
+			display: none
+		}
+
+		.panel.on {
+			display: block
+		}
+
+		.ar-panel {
+			direction: rtl;
+			font-family: 'Noto Naskh Arabic', serif
+		}
+
+		.site {
+			max-width: 920px;
+			margin: 0 auto;
+			padding: 0 1.5rem 5rem
+		}
+
+		/* ── Header ── */
+		.hdr {
+			padding: 2.25rem 0 0;
+			text-align: center
+		}
+
+		.t1 {
+			font-family: 'Playfair Display', serif;
+			font-size: 28px;
+			font-weight: 400;
+			letter-spacing: .01em;
+			margin-bottom: .3rem
+		}
+
+		.t1ar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 28px;
+			font-weight: 500;
+			margin-bottom: .3rem
+		}
+
+		.sub {
+			font-size: 15px;
+			color: var(--text2);
+			font-style: italic;
+			margin-bottom: 0
+		}
+
+		.subar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 16px;
+			color: var(--text2);
+			margin-bottom: 0
+		}
+
+		/* ── Tab grid — all visible, no scroll bar ── */
+		.tab-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: .5rem;
+			margin: 1.75rem 0 2.5rem;
+			border-bottom: 0.5px solid var(--border);
+			padding-bottom: 0;
+		}
+
+		.tab {
+			padding: .65rem .5rem;
+			font-size: 11.5px;
+			font-weight: 600;
+			letter-spacing: .04em;
+			text-transform: uppercase;
+			background: none;
+			border: none;
+			border-bottom: 2.5px solid transparent;
+			cursor: pointer;
+			color: var(--text3);
+			font-family: 'Crimson Pro', Georgia, serif;
+			transition: color .15s, border-color .15s;
+			text-align: center;
+			line-height: 1.3;
+			white-space: normal;
+			word-break: break-word;
+		}
+
+		.tab:hover {
+			color: var(--text2)
+		}
+
+		.tab.on {
+			color: var(--text);
+			border-bottom: 2.5px solid var(--accent)
+		}
+
+		.ar-panel .tab {
+			text-transform: none;
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 13px;
+			letter-spacing: 0
+		}
+
+		.tab-content {
+			display: none
+		}
+
+		.tab-content.on {
+			display: block
+		}
+
+		/* ── Section headings ── */
+		.sh {
+			font-family: 'Playfair Display', serif;
+			font-size: 21px;
+			font-weight: 400;
+			margin-bottom: 1.5rem;
+			padding-bottom: .6rem;
+			border-bottom: 0.5px solid var(--border)
+		}
+
+		.shar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 21px;
+			font-weight: 500;
+			margin-bottom: 1.5rem;
+			padding-bottom: .6rem;
+			border-bottom: 0.5px solid var(--border)
+		}
+
+		.sh2 {
+			font-family: 'Playfair Display', serif;
+			font-size: 15px;
+			font-weight: 400;
+			margin: 1.75rem 0 1rem;
+			color: var(--text2);
+			padding-bottom: .35rem;
+			border-bottom: 0.5px solid var(--border)
+		}
+
+		.sh2ar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 15px;
+			margin: 1.75rem 0 1rem;
+			color: var(--text2);
+			padding-bottom: .35rem;
+			border-bottom: 0.5px solid var(--border)
+		}
+
+		/* ── Bio section ── */
+		.bio-wrap {
+			display: grid;
+			grid-template-columns: 185px 1fr;
+			gap: 2.5rem;
+			margin-bottom: 2.5rem;
+			align-items: start
+		}
+
+		.photo-col {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: .75rem
+		}
+
+		.photo {
+			width: 100%;
+			aspect-ratio: 4/5;
+			object-fit: cover;
+			object-position: top center;
+			border-radius: var(--rl);
+			border: 0.5px solid var(--border);
+			background: var(--bg2);
+			display: block
+		}
+
+		.photo-fb {
+			width: 100%;
+			aspect-ratio: 4/5;
+			border-radius: var(--rl);
+			border: 0.5px solid var(--border);
+			background: var(--bg2);
+			display: none;
+			align-items: center;
+			justify-content: center
+		}
+
+		.photo-fb span {
+			font-family: 'Playfair Display', serif;
+			font-size: 48px;
+			color: var(--text3)
+		}
+
+		.pcredit {
+			font-size: 11px;
+			color: var(--text3);
+			text-align: center;
+			line-height: 1.5
+		}
+
+		.bio h2 {
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
+			font-size: 20px;
+			margin-bottom: .25rem
+		}
+
+		.bio .h2ar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-weight: 500;
+			font-size: 20px;
+			margin-bottom: .25rem
+		}
+
+		.names {
+			font-size: 13px;
+			color: var(--text3);
+			margin-bottom: .9rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: .4rem
+		}
+
+		.names span {
+			padding: 2px 8px;
+			border: 0.5px solid var(--border2);
+			border-radius: 2px
+		}
+
+		.bio p {
+			font-size: 16px;
+			color: var(--text2);
+			line-height: 1.72;
+			margin-bottom: .85rem
+		}
+
+		.bio .par {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 17px;
+			color: var(--text2);
+			line-height: 1.85;
+			margin-bottom: .85rem
+		}
+
+		.stats {
+			display: flex;
+			gap: 1.5rem;
+			flex-wrap: wrap;
+			margin-top: 1rem;
+			padding-top: 1rem;
+			border-top: 0.5px solid var(--border)
+		}
+
+		.sv {
+			font-family: 'Playfair Display', serif;
+			font-size: 22px;
+			font-weight: 400;
+			display: block
+		}
+
+		.sl {
+			font-size: 11px;
+			letter-spacing: .06em;
+			text-transform: uppercase;
+			color: var(--text3);
+			display: block
+		}
+
+		.slar {
+			font-family: 'Noto Naskh Arabic', serif;
+			text-transform: none;
+			font-size: 13px;
+			letter-spacing: 0
+		}
+
+		/* ── Awards section ── */
+		.awards-list {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem
+		}
+
+		.award-card {
+			display: grid;
+			grid-template-columns: 80px 1fr;
+			gap: 1.25rem;
+			align-items: start;
+			padding: 1.25rem;
+			background: var(--bg2);
+			border-radius: var(--rl);
+			border: 0.5px solid var(--border)
+		}
+
+		.award-year {
+			font-family: 'Playfair Display', serif;
+			font-size: 22px;
+			font-weight: 400;
+			color: var(--accent);
+			text-align: center;
+			line-height: 1
+		}
+
+		.award-year small {
+			display: block;
+			font-family: 'Crimson Pro', serif;
+			font-size: 11px;
+			letter-spacing: .06em;
+			text-transform: uppercase;
+			color: var(--text3);
+			margin-top: .2rem
+		}
+
+		.award-year-ar {
+			font-family: 'Playfair Display', serif;
+			font-size: 22px;
+			font-weight: 400;
+			color: var(--accent);
+			text-align: center;
+			line-height: 1
+		}
+
+		.award-year-ar small {
+			display: block;
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 12px;
+			color: var(--text3);
+			margin-top: .2rem
+		}
+
+		.award-body h3 {
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
+			font-size: 17px;
+			margin-bottom: .3rem
+		}
+
+		.award-body .h3ar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 18px;
+			margin-bottom: .3rem
+		}
+
+		.award-body p {
+			font-size: 14px;
+			color: var(--text2);
+			line-height: 1.6;
+			margin: 0
+		}
+
+		.award-body .par {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 15px;
+			color: var(--text2);
+			line-height: 1.7;
+			margin: 0
+		}
+
+		.award-icon {
+			font-size: 28px;
+			margin-bottom: .3rem;
+			display: block
+		}
+
+		.membership-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: .75rem;
+			margin-top: 1rem
+		}
+
+		.mem-card {
+			background: var(--bg);
+			border: 0.5px solid var(--border);
+			border-radius: var(--r);
+			padding: .85rem 1rem
+		}
+
+		.mem-card h4 {
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
+			font-size: 14px;
+			margin-bottom: .2rem
+		}
+
+		.mem-card .h4ar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 15px;
+			margin-bottom: .2rem
+		}
+
+		.mem-card p {
+			font-size: 12px;
+			color: var(--text3)
+		}
+
+		.mem-card .par {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 13px;
+			color: var(--text3)
+		}
+
+		/* ── Books grid ── */
+		.book-grid {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 1.5rem
+		}
+
+		.bc {
+			display: flex;
+			flex-direction: column;
+			gap: .7rem
+		}
+
+		.cw {
+			aspect-ratio: 2/3;
+			border-radius: var(--r);
+			overflow: hidden;
+			border: 0.5px solid var(--border);
+			background: var(--bg2)
+		}
+
+		.ci {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block
+		}
+
+		.cp {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 1rem .75rem;
+			gap: .45rem;
+			text-align: center
+		}
+
+		.ca {
+			background: #2c2418
+		}
+
+		.cb {
+			background: #1a2c24
+		}
+
+		.cc {
+			background: #241828
+		}
+
+		.cd {
+			background: #28201a
+		}
+
+		.ce {
+			background: #1e2430
+		}
+
+		.cf {
+			background: #241c18
+		}
+
+		.cg {
+			background: #1c2820
+		}
+
+		.ch {
+			background: #2a1c28
+		}
+
+		.cj {
+			background: #281e18
+		}
+
+		.co {
+			font-size: 22px;
+			opacity: .6
+		}
+
+		.ct {
+			font-family: 'Playfair Display', serif;
+			font-size: 12px;
+			color: rgba(255, 255, 255, .82);
+			line-height: 1.4
+		}
+
+		.ctar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 12px;
+			color: rgba(255, 255, 255, .82);
+			line-height: 1.4
+		}
+
+		.cau {
+			font-size: 10px;
+			color: rgba(255, 255, 255, .4);
+			letter-spacing: .04em;
+			text-transform: uppercase;
+			margin-top: auto
+		}
+
+		.cauar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 11px;
+			color: rgba(255, 255, 255, .4);
+			margin-top: auto
+		}
+
+		.cln {
+			width: 24px;
+			height: 0.5px;
+			background: rgba(255, 255, 255, .3)
+		}
+
+		.btag {
+			font-size: 10px;
+			letter-spacing: .07em;
+			text-transform: uppercase;
+			font-weight: 600;
+			color: var(--text3)
+		}
+
+		.btagAr {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 13px;
+			color: var(--text3)
+		}
+
+		.btit {
+			font-family: 'Playfair Display', serif;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.4
+		}
+
+		.btitar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 14px;
+			line-height: 1.5
+		}
+
+		.btit a,
+		.btitar a {
+			color: var(--text);
+			text-decoration: none
+		}
+
+		.btit a:hover,
+		.btitar a:hover {
+			text-decoration: underline
+		}
+
+		.bdesc {
+			font-size: 13px;
+			color: var(--text2);
+			line-height: 1.55;
+			flex: 1
+		}
+
+		.bdescAr {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 14px;
+			color: var(--text2);
+			line-height: 1.6;
+			flex: 1
+		}
+
+		.bmeta {
+			font-size: 12px;
+			color: var(--text3)
+		}
+
+		.bmetaAr {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 13px;
+			color: var(--text3)
+		}
+
+		/* ── Articles list ── */
+		.arts {
+			display: flex;
+			flex-direction: column
+		}
+
+		.ar-row {
+			display: grid;
+			grid-template-columns: 52px 1fr;
+			gap: 1rem;
+			padding: .85rem 0;
+			border-bottom: 0.5px solid var(--border);
+			align-items: start
+		}
+
+		.ar-row:last-child {
+			border-bottom: none
+		}
+
+		.ay {
+			font-size: 13px;
+			color: var(--text3);
+			padding-top: 3px
+		}
+
+		.at {
+			font-family: 'Playfair Display', serif;
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: .2rem;
+			line-height: 1.4
+		}
+
+		.atar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 17px;
+			margin-bottom: .2rem;
+			line-height: 1.5
+		}
+
+		.at a,
+		.atar a {
+			color: var(--text);
+			text-decoration: none
+		}
+
+		.at a:hover,
+		.atar a:hover {
+			text-decoration: underline
+		}
+
+		.ap {
+			font-size: 13px;
+			color: var(--text2)
+		}
+
+		.apar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 14px;
+			color: var(--text2)
+		}
+
+		.pill {
+			display: inline-block;
+			font-size: 10px;
+			letter-spacing: .05em;
+			text-transform: uppercase;
+			font-weight: 600;
+			padding: 2px 6px;
+			border: 0.5px solid var(--border2);
+			border-radius: 2px;
+			color: var(--text3);
+			margin-left: 6px;
+			vertical-align: middle
+		}
+
+		.pillar {
+			margin-left: 0;
+			margin-right: 6px;
+			font-family: 'Crimson Pro', serif;
+			text-transform: none;
+			letter-spacing: 0
+		}
+
+		.note {
+			font-size: 12px;
+			color: var(--text3);
+			font-style: italic;
+			margin-top: .2rem
+		}
+
+		.notear {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 13px;
+			color: var(--text3);
+			margin-top: .2rem
+		}
+
+		/* ── Gallery ── */
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1rem
+		}
+
+		.gallery-item {
+			aspect-ratio: 4/3;
+			background: var(--bg2);
+			border-radius: var(--r);
+			border: 0.5px solid var(--border);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: .5rem;
+			cursor: pointer;
+			transition: border-color .2s
+		}
+
+		.gallery-item:hover {
+			border-color: var(--accent)
+		}
+
+		.gi-icon {
+			font-size: 28px;
+			opacity: .3
+		}
+
+		.gi-label {
+			font-size: 11px;
+			color: var(--text3);
+			text-align: center;
+			padding: 0 .5rem
+		}
+
+		.gallery-note {
+			margin-top: 1.25rem;
+			font-size: 13px;
+			color: var(--text3);
+			font-style: italic;
+			line-height: 1.6
+		}
+
+		.gallery-notear {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 14px;
+			color: var(--text3);
+			margin-top: 1.25rem;
+			line-height: 1.6
+		}
+
+		/* ── Interviews ── */
+		.interview-list {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem
+		}
+
+		.interview-card {
+			background: var(--bg2);
+			border-radius: var(--rl);
+			border: 0.5px solid var(--border);
+			padding: 1rem 1.25rem
+		}
+
+		.ic-title {
+			font-family: 'Playfair Display', serif;
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: .3rem
+		}
+
+		.ic-titlear {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 17px;
+			margin-bottom: .3rem
+		}
+
+		.ic-title a,
+		.ic-titlear a {
+			color: var(--text);
+			text-decoration: none
+		}
+
+		.ic-title a:hover,
+		.ic-titlear a:hover {
+			text-decoration: underline
+		}
+
+		.ic-meta {
+			font-size: 13px;
+			color: var(--text2)
+		}
+
+		.ic-metaar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 14px;
+			color: var(--text2)
+		}
+
+		.ic-badge {
+			display: inline-block;
+			font-size: 10px;
+			padding: 2px 8px;
+			border-radius: var(--r);
+			background: var(--bg3);
+			color: var(--text3);
+			margin-left: 8px;
+			vertical-align: middle;
+			letter-spacing: .04em;
+			text-transform: uppercase
+		}
+
+		/* ── More titles ── */
+		.tg {
+			columns: 2;
+			column-gap: 2rem
+		}
+
+		.ti {
+			break-inside: avoid;
+			padding: .4rem 0;
+			border-bottom: 0.5px solid var(--border);
+			font-size: 14px;
+			color: var(--text2);
+			line-height: 1.5
+		}
+
+		.ti strong {
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
+			font-size: 14px;
+			color: var(--text)
+		}
+
+		.tiar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 16px
+		}
+
+		.tiar strong {
+			font-family: 'Noto Naskh Arabic', serif
+		}
+
+		/* ── Placeholder ── */
+		.placeholder-banner {
+			background: var(--bg2);
+			border: 0.5px dashed var(--border2);
+			border-radius: var(--rl);
+			padding: 1.5rem 2rem;
+			text-align: center;
+			color: var(--text3);
+			font-size: 14px;
+			margin-bottom: 1.5rem;
+			margin-top: 1.5rem
+		}
+
+		.placeholder-banner .pb-icon {
+			font-size: 32px;
+			margin-bottom: .5rem
+		}
+
+		/* ── Footer ── */
+		footer {
+			text-align: center;
+			padding-top: 2rem;
+			border-top: 0.5px solid var(--border);
+			font-size: 13px;
+			color: var(--text3);
+			line-height: 2
+		}
+
+		.footar {
+			font-family: 'Noto Naskh Arabic', serif;
+			font-size: 15px
+		}
+
+		/* ── Responsive ── */
+		@media(max-width:760px) {
+			.bio-wrap {
+				grid-template-columns: 1fr
+			}
+
+			.photo {
+				width: 140px;
+				margin: 0 auto
+			}
+
+			.book-grid {
+				grid-template-columns: repeat(2, 1fr)
+			}
+
+			.gallery {
+				grid-template-columns: repeat(2, 1fr)
+			}
+
+			.tg {
+				columns: 1
+			}
+
+			.membership-grid {
+				grid-template-columns: 1fr
+			}
+
+			.tab-grid {
+				grid-template-columns: repeat(3, 1fr)
+			}
+
+			.award-card {
+				grid-template-columns: 60px 1fr;
+				gap: .85rem
+			}
+		}
+
+		@media(max-width:500px) {
+			.book-grid {
+				grid-template-columns: 1fr 1fr;
+				gap: .75rem
+			}
+
+			.t1,
+			.t1ar {
+				font-size: 22px
+			}
+
+			.tab-grid {
+				grid-template-columns: repeat(2, 1fr)
+			}
+
+			.tab {
+				font-size: 10.5px;
+				padding: .55rem .35rem
+			}
+		}
+	</style>
 </head>
 
 <body>
-	<!-- Language Bar -->
+
+	<!-- LANGUAGE BAR -->
 	<div class="lang-bar">
 		<button class="lb on" onclick="sw('en')">English<small>English</small></button>
 		<button class="lb" onclick="sw('ar')">العربية<small>Arabic</small></button>
@@ -17,7 +1035,9 @@
 	</div>
 
 
-	<!--  English  -->
+	<!-- ═══════════════════════════════════
+     E N G L I S H
+═══════════════════════════════════ -->
 	<div id="p-en" class="panel on">
 		<div class="site">
 			<header class="hdr">
@@ -699,7 +1719,9 @@
 	</div><!-- /en -->
 
 
-	<!-- Arabic -->
+	<!-- ═══════════════════════════════════
+     A R A B I C
+═══════════════════════════════════ -->
 	<div id="p-ar" class="panel ar-panel">
 		<div class="site">
 			<header class="hdr">
@@ -1231,7 +2253,9 @@
 	</div><!-- /ar -->
 
 
-	<!-- Albanian -->
+	<!-- ═══════════════════════════════════
+     A L B A N I A N
+═══════════════════════════════════ -->
 	<div id="p-sq" class="panel">
 		<div class="site">
 			<header class="hdr">
@@ -1790,7 +2814,30 @@
 		</div>
 	</div><!-- /sq -->
 
-	<script type="module" src="./src/index.js"></script>
+
+	<script>
+		function sw(lang) {
+			document.querySelectorAll('.lb').forEach(b => b.classList.remove('on'));
+			document.querySelector('.lb[onclick="sw(\'' + lang + '\')"]').classList.add('on');
+			document.querySelectorAll('.panel').forEach(p => p.classList.remove('on'));
+			document.getElementById('p-' + lang).classList.add('on');
+			document.documentElement.lang = lang;
+			document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+		function tab(lang, section) {
+			var panel = document.getElementById('p-' + lang);
+			panel.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
+			panel.querySelectorAll('.tab-content').forEach(c => c.classList.remove('on'));
+			panel.querySelectorAll('.tab').forEach(t => {
+				if (t.getAttribute('onclick') === "tab('" + lang + "','" + section + "')") t.classList.add('on');
+			});
+			var el = document.getElementById(lang + '-' + section);
+			if (el) el.classList.add('on');
+			var lb = document.querySelector('.lang-bar');
+			window.scrollTo({ top: lb ? lb.offsetHeight + 2 : 0, behavior: 'smooth' });
+		}
+	</script>
 </body>
 
 </html>
