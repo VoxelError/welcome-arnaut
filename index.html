@@ -1,44 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Muhamed Mufaku AlArnaut — Collected Works</title>
+	<title>Muhamed Mufaku AlArnaut</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+		rel="stylesheet" />
 </head>
 
 <body>
-	<div class="navbar">
-		<div class="logo">Prof. AlArnaut</div>
-		<div id="tab-grid"></div>
-	</div>
 
-	<div id="panel">
-		<div class="site">
-			<header class="hdr">
-				<div class="t1">Muhamed Mufaku AlArnaut</div>
-				<div class="sub">Scholar · Historian · Translator · Cultural Bridge-Builder</div>
-			</header>
+	<!-- NAVBAR -->
+	<nav class="navbar">
+		<div id="landing" class="page brand">Muhamed Mufaku AlArnaut</div>
 
-			<div id="content"></div>
+		<div id="tab-grid" class="nav-tabs">
+			<button id="books" class="page tab">Books</button>
+			<button id="writing" class="page tab">Writing</button>
+			<button id="interviews" class="page tab">Interviews</button>
+			<button id="awards" class="page tab">Awards</button>
+			<button id="photos" class="page tab">Photos</button>
 		</div>
+
+		<div class="nav-right">
+			<div class="lang-switcher">
+				<button class="lb on">EN</button>
+				<button class="lb">AR</button>
+				<button class="lb">SQ</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- CONTENT -->
+	<div id="content" class="wrap"></div>
+
+	<div class="wrap">
+		<footer>
+			<div class="footer-inner">
+				<div class="footer-name">Muhamed Mufaku AlArnaut — Collected Works</div>
+				<div class="footer-links">
+					<a href="https://en.wikipedia.org/wiki/Muhammad_Mufaku" target="_blank">Wikipedia</a>
+					<a href="https://ashak.org/anetaret/muhamed-mufaku/" target="_blank">ASHAK</a>
+					<a href="https://www.researchgate.net/profile/Muhamed-Mufaku" target="_blank">ResearchGate</a>
+					<a href="https://orientalizmi.wordpress.com/2013/07/06/dr-muhamed-mufaku-arnauti/"
+						target="_blank">Orientalizmi Shqiptar</a>
+				</div>
+			</div>
+		</footer>
 	</div>
 
 	<script type="module" src="./src/index"></script>
 </body>
-
-<footer>
-	<p>Muhamed Mufaku AlArnaut — Collected Works</p>
-	<p>
-		<a href="https://en.wikipedia.org/wiki/Muhammad_Mufaku" target="_blank">Wikipedia</a> ·
-		<a href="https://ashak.org/anetaret/muhamed-mufaku/" target="_blank">ASHAK</a> ·
-		<a href="https://www.researchgate.net/profile/Muhamed-Mufaku" target="_blank">ResearchGate</a> ·
-		<a href="https://orientalizmi.wordpress.com/2013/07/06/dr-muhamed-mufaku-arnauti/" target="_blank">Orientalizmi
-			Shqiptar</a>
-	</p>
-	<p style="font-size:11px; margin-top:.5rem">
-		Photo: Orientalizmi Shqiptar · Book covers: publishers' sites
-	</p>
-</footer>
 
 </html>
