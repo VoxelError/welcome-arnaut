@@ -6,7 +6,20 @@
 	padding: 0;
 }
 
-:root {
+.light {
+  --bg:    #e8e4de;
+  --bg2:   #dedad3;
+  --bg3:   #d0cbc3;
+  --line:  rgba(0, 0, 0, 0.08);
+  --line2: rgba(0, 0, 0, 0.16);
+  --text:  #1a1814;
+  --text2: #5a5650;
+  --text3: #8a8680;
+  --gold:  #7a5a28;
+  --r:     4px;
+}
+
+.dark {
 	--bg: #0e0e0e;
 	--bg2: #161616;
 	--bg3: #1f1f1f;
@@ -255,7 +268,7 @@ a {
 	font-size: 1.5rem;
 	font-weight: 400;
 	margin-bottom: 2rem;
-	padding-bottom: 0.85rem;
+	padding-bottom: 0.5rem;
 	border-bottom: 1px solid var(--line);
 	display: flex;
 	align-items: baseline;
@@ -280,10 +293,35 @@ a {
 	margin: 2.5rem 0 1.25rem;
 	padding-bottom: 0.5rem;
 	border-bottom: 1px solid var(--line);
+
+	&:first-of-type {
+		margin-top: 0;
+	}
 }
 
-.sub-head:first-of-type {
-	margin-top: 0;
+.more {
+	all: unset;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+
+	font-size: 12px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text3);
+	font-weight: 500;
+	margin: 2.5rem 0 1.25rem;
+	padding-bottom: 0.5rem;
+	// border-bottom: 1px solid var(--line);
+	transition: color 0.15s;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	&:hover {
+		color: var(--text2);
+	}
 }
 
 /* ── BOOK GRID ── */
@@ -304,19 +342,19 @@ a {
 	background: var(--bg2);
 	border: 1px solid var(--line);
 	overflow: hidden;
-}
 
-.book-cover img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-	filter: grayscale(15%);
-	transition: filter 0.25s;
-}
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+		filter: grayscale(15%);
+		transition: filter 0.25s;
+	}
 
-.book-cover:hover img {
-	filter: grayscale(0%);
+	&:hover img {
+		filter: grayscale(0%);
+	}
 }
 
 .book-placeholder {
@@ -356,15 +394,15 @@ a {
 	font-size: 15px;
 	line-height: 1.4;
 	color: var(--text);
-}
 
-.book-title a {
-	color: var(--text);
-}
+	& a {
+		color: var(--text);
 
-.book-title a:hover {
-	color: var(--gold);
-	text-decoration: none;
+		&:hover {
+			color: var(--gold);
+			text-decoration: none;
+		}
+	}
 }
 
 .book-meta {
@@ -386,13 +424,13 @@ a {
 	font-size: 13px;
 	color: var(--text2);
 	line-height: 1.5;
-}
 
-.further-item strong {
-	font-family: 'EB Garamond', serif;
-	font-weight: 400;
-	font-size: 14px;
-	color: var(--text);
+	& strong {
+		font-family: 'EB Garamond', serif;
+		font-weight: 400;
+		font-size: 14px;
+		color: var(--text);
+	}
 }
 
 /* ── PUB LIST ── */
@@ -408,10 +446,10 @@ a {
 	padding: 1rem 0;
 	border-bottom: 1px solid var(--line);
 	align-items: start;
-}
 
-.pub-row:last-child {
-	border-bottom: none;
+	&:last-child {
+		border-bottom: none;
+	}
 }
 
 .pub-year {
@@ -426,15 +464,15 @@ a {
 	font-size: 17px;
 	line-height: 1.4;
 	margin-bottom: 0.2rem;
-}
 
-.pub-title a {
-	color: var(--text);
-}
+	& a {
+		color: var(--text);
 
-.pub-title a:hover {
-	color: var(--gold);
-	text-decoration: none;
+		&:hover {
+			color: var(--gold);
+			text-decoration: none;
+		}
+	}
 }
 
 .pub-venue {
@@ -480,15 +518,15 @@ a {
 	font-size: 17px;
 	margin-bottom: 0.3rem;
 	line-height: 1.4;
-}
 
-.interview-title a {
-	color: var(--text);
-}
+	& a {
+		color: var(--text);
 
-.interview-title a:hover {
-	color: var(--gold);
-	text-decoration: none;
+		&:hover {
+			color: var(--gold);
+			text-decoration: none;
+		}
+	}
 }
 
 .interview-meta {
@@ -518,16 +556,16 @@ a {
 	font-size: 1.5rem;
 	color: var(--gold);
 	line-height: 1;
-}
 
-.award-year small {
-	display: block;
-	font-family: 'DM Sans', sans-serif;
-	font-size: 10px;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	color: var(--text3);
-	margin-top: 0.3rem;
+	& small {
+		display: block;
+		font-family: 'DM Sans', sans-serif;
+		font-size: 10px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--text3);
+		margin-top: 0.3rem;
+	}
 }
 
 .award-title {
@@ -590,10 +628,10 @@ a {
 	cursor: pointer;
 	transition: background 0.15s;
 	padding: 1rem;
-}
 
-.gallery-item:hover {
-	background: var(--bg3);
+	&:hover {
+		background: var(--bg3);
+	}
 }
 
 .gallery-icon {
@@ -622,7 +660,8 @@ a {
 /* ── FOOTER ── */
 footer {
 	border-top: 1px solid var(--line);
-	padding: 1.75rem 0;
+	padding: 1.75rem 1rem;
+	font-size: 12px;
 }
 
 .footer-inner {
@@ -634,22 +673,21 @@ footer {
 }
 
 .footer-name {
-	font-family: 'EB Garamond', serif;
-	font-size: 14px;
 	color: var(--text3);
+	padding-right: 1rem;
+	border-right: 1px solid var(--line2);
 }
 
 .footer-links {
 	display: flex;
 	gap: 1.5rem;
-	font-size: 12px;
-}
 
-.footer-links a {
-	color: var(--text3);
-}
+	& a {
+		color: var(--text3);
 
-.footer-links a:hover {
-	color: var(--gold);
-	text-decoration: none;
+		&:hover {
+			color: var(--gold);
+			text-decoration: none;
+		}
+	}
 }

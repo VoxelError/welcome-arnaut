@@ -22,9 +22,11 @@ await i18next.init({
 	}
 })
 
+// tabs logic
+
 const modules = { landing, books, writing, interviews, awards, photos }
 const pages = Object.keys(modules)
-const default_page = "landing"
+const default_page = "writing"
 
 document.getElementById("content").innerHTML = modules[default_page]()
 
@@ -41,5 +43,27 @@ pages.forEach(page => {
 	const t = document.getElementById(page)
 	t.id == default_page && t.classList.add('on')
 	t.addEventListener('click', tab)
-	console.log(document.getElementById(page).id)
+})
+
+// theme switcher
+
+const body = document.getElementById("theme")
+const toggle = document.getElementById("theme-toggle")
+const get_theme = () => localStorage.getItem("theme")
+const set_theme = (item) => localStorage.setItem("theme", item)
+
+get_theme() == null && set_theme("light")
+const is_light = () => get_theme() == "light" ? true : false
+
+is_light() ? body.classList.add("light") : body.classList.add("dark")
+toggle.textContent = is_light() ? '☀️' : '🌙'
+
+toggle.addEventListener('click', () => {
+	body.classList.remove("light")
+	body.classList.remove("dark")
+
+	is_light() ? body.classList.add("dark") : body.classList.add("light")
+	set_theme(is_light() ? "dark" : "light")
+
+	toggle.textContent = is_light() ? '☀️' : '🌙'
 })

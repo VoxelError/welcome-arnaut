@@ -18,8 +18,9 @@ export default () => /* html */`
 						<div><span class="stat-val">2012</span><span class="stat-label">Medal of Merit</span></div>
 					</div>
 				</div>
-				<img class="hero-photo"
-					src="https://orientalizmi.wordpress.com/wp-content/uploads/2014/02/dr-muhamed-mufaku-arnauti-e1582465691567.jpg"
+				<img
+					class="hero-photo"
+					src="/profile.jpeg"
 					alt="Muhamed Mufaku AlArnaut" 
 				/>
 			</div>
